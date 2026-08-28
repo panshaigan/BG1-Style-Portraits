@@ -1,277 +1,271 @@
-﻿# BG1 Style Portraits
+﻿[![GitHub release (latest by date)](https://img.shields.io/github/v/release/panshaigan/BG1-Style-Portraits?color=darkred&include_prereleases&label=latest%20release)](https://github.com/panshaigan/BG1-Style-Portraits/releases/latest)
+[![Github downloads (all releases)](https://img.shields.io/github/downloads/panshaigan/BG1-Style-Portraits/total.svg?color=gold)](https://github.com/panshaigan/BG1-Style-Portraits/releases)
+[![Platform](https://img.shields.io/static/v1?label=platform&message=Windows%20%7C%20macOS%20%7C%20Linux&color=informational)](https://github.com/panshaigan/BG1-Style-Portraits/releases/latest)
+[![Supported games](https://img.shields.io/static/v1?label=supported%20games&message=BG%3AEE%20%7C%20BG2%3AEE%20%7C%20EET&color=indigo)](https://github.com/panshaigan/BG1-Style-Portraits)
+[![Language](https://img.shields.io/static/v1?label=language&message=English&color=limegreen)](https://github.com/panshaigan/BG1-Style-Portraits)
 
-**Author:** shaigan  
-**Version:** 0.1.0
+# BG1 Style Portraits
+*BG1-style portraits for BG:EE, BG2:EE and EET.*
 
-WeiDU mod for **Baldur's Gate: Enhanced Edition**, **Baldur's Gate II: Enhanced Edition**, and **EET** that restores BG1-style portrait presentation. It adds enhanced portraits for original-party NPCs, an extended Isandir custom portrait pack for player characters, and an optional component that removes NPC portraits from the player portrait picker.
+[![G3 Forums](https://img.shields.io/static/v1?label=Discussion&message=G3%20Forums%20%28coming%20soon%29&color=3b45a3&labelColor=eee&style=for-the-badge)](#)
 
-**Supported games:** BG:EE, BG2:EE, EET  
-**UI support:** Standard EE UI (vanilla / LeUI) and Infinity UI++ (auto-detected at install time)
+## Overview
 
-## Installation
+This WeiDU mod aims to improve the quality and consistency of party NPC portraits, especially in EET. The first release features BG1 and SoD NPC portraits, with components for BG2 and NPC mods planned for future releases.
+
+The mod supports the vanilla EE UI, LeUI, and Infinity UI++.
+
+## Installation order and mod compatibility
+
+This is primarily a portrait mod and should be installed after content mods that install new NPCs or quests.
+
+There are no compatibility issues known with other mods.
 
 1. Extract the mod to your game or EET mod folder.
 2. Run `setup-BG1StylePortraits.exe` (or install via WeiDU against `BG1StylePortraits/BG1StylePortraits.tp2`).
 3. Select the components you want at install time.
 
-No special load-order requirements beyond typical portrait and UI mods.
-
 ## Components
 
-| Component | Description |
-|-----------|-------------|
-| **Make NPC portraits unavailable for PC selection** | Removes portraits already assigned to NPCs from the `<CHARNAME>` portrait list, so party members keep their unique portraits. |
-| **Add Extended Isandir's Portrait Pack** | Adds 52 custom player portraits: 14 female (`WOM*`) and 38 male across `ALT`, `ARM`, `ART`, `MAG`, `ORC`, and `OTH` categories. |
-| **Enhanced BG1 NPC Portraits** | Replaces portraits for 36 recruitable NPCs with BG1-style art. |
+### Make NPC portraits unavailable for PC selection *(BG:EE, BG2:EE, and EET)*
 
-### Extended Isandir's Portrait Pack
+This component removes portraits already assigned to NPCs from the `<CHARNAME>` portrait list, so party members keep their unique portraits.
 
-This component adds custom portraits selectable during character creation:
+### Add Extended Isandir's Portrait Pack *(BG:EE, BG2:EE, and EET)*
 
-- **14 female portraits** (`WOM0111` through `WOM1511`, skipping `WOM1011`)
-- **38 male portraits** across six categories:
-  - `ALT` — alternate styles
-  - `ARM` — armored
-  - `ART` — artist
-  - `MAG` — mage
-  - `ORC` — orc
-  - `OTH` — other
+This component adds well-known custom portraits selectable during character creation
 
-## Portrait Variants
+### Enhanced BG1 NPC Portraits *(BG:EE, BG2:EE, and EET)*
 
-Enhanced NPC portraits use three size variants:
+This component replaces portraits for 36 recruitable NPCs with enhanced BG1-style art.
 
-| Suffix | Visible in |
-|--------|------------|
-| **L** | Character record (base portrait) |
-| **M** | In-game (zoomed in) |
-| **r** | Infinity UI equipment screen (zoomed out) |
+Each NPC portrait uses three size variants:
 
-The mod BMP files also include an **S** variant for some contexts; the gallery below previews **L**, **M**, and **r** only.
-
-## Enhanced BG1 NPC Portraits Gallery
+- **M/S** — in-game (zoomed in)
+- **L** — character record/inventory (base portrait)
+- **r** — additional portrait at the Infinity UI inventory screen (zoomed out)
 
 Click a thumbnail to view the full-size portrait.
 
 ### Ajantis
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Ajantis — L](docs/portraits/thumbnails/AJANTISL.webp)](docs/portraits/AJANTISL.webp) | [![Ajantis — M](docs/portraits/thumbnails/AJANTISM.webp)](docs/portraits/AJANTISM.webp) | [![Ajantis — r](docs/portraits/thumbnails/ajantisr.webp)](docs/portraits/ajantisr.webp) |
+| [![Ajantis - M](docs/portraits/thumbnails/AJANTISM.webp)](docs/portraits/AJANTISM.webp) | [![Ajantis - L](docs/portraits/thumbnails/AJANTISL.webp)](docs/portraits/AJANTISL.webp) | [![Ajantis - r](docs/portraits/thumbnails/ajantisr.webp)](docs/portraits/ajantisr.webp) |
 
 ### Alora
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Alora — L](docs/portraits/thumbnails/ALORAL.webp)](docs/portraits/ALORAL.webp) | [![Alora — M](docs/portraits/thumbnails/ALORAM.webp)](docs/portraits/ALORAM.webp) | [![Alora — r](docs/portraits/thumbnails/alorar.webp)](docs/portraits/alorar.webp) |
+| [![Alora - M](docs/portraits/thumbnails/ALORAM.webp)](docs/portraits/ALORAM.webp) | [![Alora - L](docs/portraits/thumbnails/ALORAL.webp)](docs/portraits/ALORAL.webp) | [![Alora - r](docs/portraits/thumbnails/alorar.webp)](docs/portraits/alorar.webp) |
 
 ### Baeloth
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Baeloth — L](docs/portraits/thumbnails/BAELOTHL.webp)](docs/portraits/BAELOTHL.webp) | [![Baeloth — M](docs/portraits/thumbnails/BAELOTHM.webp)](docs/portraits/BAELOTHM.webp) | [![Baeloth — r](docs/portraits/thumbnails/baelothr.webp)](docs/portraits/baelothr.webp) |
-
-### Baldur's Gate: Siege of Dragonspear — Imoen
-
-| L | M | r |
-|:---:|:---:|:---:|
-| [![Baldur's Gate: Siege of Dragonspear — Imoen — L](docs/portraits/thumbnails/BDIMOENL.webp)](docs/portraits/BDIMOENL.webp) | [![Baldur's Gate: Siege of Dragonspear — Imoen — M](docs/portraits/thumbnails/BDIMOENM.webp)](docs/portraits/BDIMOENM.webp) | [![Baldur's Gate: Siege of Dragonspear — Imoen — r](docs/portraits/thumbnails/bdimoenr.webp)](docs/portraits/bdimoenr.webp) |
-
-### Baldur's Gate: Siege of Dragonspear — Viconia
-
-| L | M | r |
-|:---:|:---:|:---:|
-| [![Baldur's Gate: Siege of Dragonspear — Viconia — L](docs/portraits/thumbnails/BDVICONL.webp)](docs/portraits/BDVICONL.webp) | [![Baldur's Gate: Siege of Dragonspear — Viconia — M](docs/portraits/thumbnails/BDVICONM.webp)](docs/portraits/BDVICONM.webp) | [![Baldur's Gate: Siege of Dragonspear — Viconia — r](docs/portraits/thumbnails/bdviconr.webp)](docs/portraits/bdviconr.webp) |
+| [![Baeloth - M](docs/portraits/thumbnails/BAELOTHM.webp)](docs/portraits/BAELOTHM.webp) | [![Baeloth - L](docs/portraits/thumbnails/BAELOTHL.webp)](docs/portraits/BAELOTHL.webp) | [![Baeloth - r](docs/portraits/thumbnails/baelothr.webp)](docs/portraits/baelothr.webp) |
 
 ### Branwen
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Branwen — L](docs/portraits/thumbnails/BRANWEL.webp)](docs/portraits/BRANWEL.webp) | [![Branwen — M](docs/portraits/thumbnails/BRANWEM.webp)](docs/portraits/BRANWEM.webp) | [![Branwen — r](docs/portraits/thumbnails/branwenr.webp)](docs/portraits/branwenr.webp) |
-
-### Caelar
-
-| L | M | r |
-|:---:|:---:|:---:|
-| [![Caelar — L](docs/portraits/thumbnails/CAELARL.webp)](docs/portraits/CAELARL.webp) | [![Caelar — M](docs/portraits/thumbnails/CAELARM.webp)](docs/portraits/CAELARM.webp) | [![Caelar — r](docs/portraits/thumbnails/caelarr.webp)](docs/portraits/caelarr.webp) |
+| [![Branwen - M](docs/portraits/thumbnails/BRANWEM.webp)](docs/portraits/BRANWEM.webp) | [![Branwen - L](docs/portraits/thumbnails/BRANWEL.webp)](docs/portraits/BRANWEL.webp) | [![Branwen - r](docs/portraits/thumbnails/branwenr.webp)](docs/portraits/branwenr.webp) |
 
 ### Coran
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Coran — L](docs/portraits/thumbnails/CORANL.webp)](docs/portraits/CORANL.webp) | [![Coran — M](docs/portraits/thumbnails/CORANM.webp)](docs/portraits/CORANM.webp) | [![Coran — r](docs/portraits/thumbnails/coranr.webp)](docs/portraits/coranr.webp) |
+| [![Coran - M](docs/portraits/thumbnails/CORANM.webp)](docs/portraits/CORANM.webp) | [![Coran - L](docs/portraits/thumbnails/CORANL.webp)](docs/portraits/CORANL.webp) | [![Coran - r](docs/portraits/thumbnails/coranr.webp)](docs/portraits/coranr.webp) |
 
 ### Dorn
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Dorn — L](docs/portraits/thumbnails/DORNL.webp)](docs/portraits/DORNL.webp) | [![Dorn — M](docs/portraits/thumbnails/DORNM.webp)](docs/portraits/DORNM.webp) | [![Dorn — r](docs/portraits/thumbnails/dornr.webp)](docs/portraits/dornr.webp) |
+| [![Dorn - M](docs/portraits/thumbnails/DORNM.webp)](docs/portraits/DORNM.webp) | [![Dorn - L](docs/portraits/thumbnails/DORNL.webp)](docs/portraits/DORNL.webp) | [![Dorn - r](docs/portraits/thumbnails/dornr.webp)](docs/portraits/dornr.webp) |
 
 ### Dynaheir
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Dynaheir — L](docs/portraits/thumbnails/DYNAHEIL.webp)](docs/portraits/DYNAHEIL.webp) | [![Dynaheir — M](docs/portraits/thumbnails/DYNAHEIM.webp)](docs/portraits/DYNAHEIM.webp) | [![Dynaheir — r](docs/portraits/thumbnails/dynaheir.webp)](docs/portraits/dynaheir.webp) |
+| [![Dynaheir - M](docs/portraits/thumbnails/DYNAHEIM.webp)](docs/portraits/DYNAHEIM.webp) | [![Dynaheir - L](docs/portraits/thumbnails/DYNAHEIL.webp)](docs/portraits/DYNAHEIL.webp) | [![Dynaheir - r](docs/portraits/thumbnails/dynaheir.webp)](docs/portraits/dynaheir.webp) |
 
 ### Edwin
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Edwin — L](docs/portraits/thumbnails/EDWINL.webp)](docs/portraits/EDWINL.webp) | [![Edwin — M](docs/portraits/thumbnails/EDWINM.webp)](docs/portraits/EDWINM.webp) | [![Edwin — r](docs/portraits/thumbnails/edwinr.webp)](docs/portraits/edwinr.webp) |
+| [![Edwin - M](docs/portraits/thumbnails/EDWINM.webp)](docs/portraits/EDWINM.webp) | [![Edwin - L](docs/portraits/thumbnails/EDWINL.webp)](docs/portraits/EDWINL.webp) | [![Edwin - r](docs/portraits/thumbnails/edwinr.webp)](docs/portraits/edwinr.webp) |
 
 ### Eldoth
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Eldoth — L](docs/portraits/thumbnails/ELDOTHL.webp)](docs/portraits/ELDOTHL.webp) | [![Eldoth — M](docs/portraits/thumbnails/ELDOTHM.webp)](docs/portraits/ELDOTHM.webp) | [![Eldoth — r](docs/portraits/thumbnails/eldothr.webp)](docs/portraits/eldothr.webp) |
+| [![Eldoth - M](docs/portraits/thumbnails/ELDOTHM.webp)](docs/portraits/ELDOTHM.webp) | [![Eldoth - L](docs/portraits/thumbnails/ELDOTHL.webp)](docs/portraits/ELDOTHL.webp) | [![Eldoth - r](docs/portraits/thumbnails/eldothr.webp)](docs/portraits/eldothr.webp) |
 
 ### Faldorn
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Faldorn — L](docs/portraits/thumbnails/FALDORNL.webp)](docs/portraits/FALDORNL.webp) | [![Faldorn — M](docs/portraits/thumbnails/FALDORNM.webp)](docs/portraits/FALDORNM.webp) | [![Faldorn — r](docs/portraits/thumbnails/faldornr.webp)](docs/portraits/faldornr.webp) |
+| [![Faldorn - M](docs/portraits/thumbnails/FALDORNM.webp)](docs/portraits/FALDORNM.webp) | [![Faldorn - L](docs/portraits/thumbnails/FALDORNL.webp)](docs/portraits/FALDORNL.webp) | [![Faldorn - r](docs/portraits/thumbnails/faldornr.webp)](docs/portraits/faldornr.webp) |
 
 ### Garrick
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Garrick — L](docs/portraits/thumbnails/GARRICKL.webp)](docs/portraits/GARRICKL.webp) | [![Garrick — M](docs/portraits/thumbnails/GARRICKM.webp)](docs/portraits/GARRICKM.webp) | [![Garrick — r](docs/portraits/thumbnails/garrickr.webp)](docs/portraits/garrickr.webp) |
-
-### Glint
-
-| L | M | r |
-|:---:|:---:|:---:|
-| [![Glint — L](docs/portraits/thumbnails/GLINTL.webp)](docs/portraits/GLINTL.webp) | [![Glint — M](docs/portraits/thumbnails/GLINTM.webp)](docs/portraits/GLINTM.webp) | [![Glint — r](docs/portraits/thumbnails/glintr.webp)](docs/portraits/glintr.webp) |
+| [![Garrick - M](docs/portraits/thumbnails/GARRICKM.webp)](docs/portraits/GARRICKM.webp) | [![Garrick - L](docs/portraits/thumbnails/GARRICKL.webp)](docs/portraits/GARRICKL.webp) | [![Garrick - r](docs/portraits/thumbnails/garrickr.webp)](docs/portraits/garrickr.webp) |
 
 ### Imoen
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Imoen — L](docs/portraits/thumbnails/IMOENL.webp)](docs/portraits/IMOENL.webp) | [![Imoen — M](docs/portraits/thumbnails/IMOENM.webp)](docs/portraits/IMOENM.webp) | [![Imoen — r](docs/portraits/thumbnails/imoenr.webp)](docs/portraits/imoenr.webp) |
+| [![Imoen - M](docs/portraits/thumbnails/IMOENM.webp)](docs/portraits/IMOENM.webp) | [![Imoen - L](docs/portraits/thumbnails/IMOENL.webp)](docs/portraits/IMOENL.webp) | [![Imoen - r](docs/portraits/thumbnails/imoenr.webp)](docs/portraits/imoenr.webp) |
 
 ### Jaheira
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Jaheira — L](docs/portraits/thumbnails/JAHEIRAL.webp)](docs/portraits/JAHEIRAL.webp) | [![Jaheira — M](docs/portraits/thumbnails/JAHEIRAM.webp)](docs/portraits/JAHEIRAM.webp) | [![Jaheira — r](docs/portraits/thumbnails/jaheirar.webp)](docs/portraits/jaheirar.webp) |
+| [![Jaheira - M](docs/portraits/thumbnails/JAHEIRAM.webp)](docs/portraits/JAHEIRAM.webp) | [![Jaheira - L](docs/portraits/thumbnails/JAHEIRAL.webp)](docs/portraits/JAHEIRAL.webp) | [![Jaheira - r](docs/portraits/thumbnails/jaheirar.webp)](docs/portraits/jaheirar.webp) |
 
 ### Kagain
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Kagain — L](docs/portraits/thumbnails/KAGAINL.webp)](docs/portraits/KAGAINL.webp) | [![Kagain — M](docs/portraits/thumbnails/KAGAINM.webp)](docs/portraits/KAGAINM.webp) | [![Kagain — r](docs/portraits/thumbnails/kagainr.webp)](docs/portraits/kagainr.webp) |
+| [![Kagain - M](docs/portraits/thumbnails/KAGAINM.webp)](docs/portraits/KAGAINM.webp) | [![Kagain - L](docs/portraits/thumbnails/KAGAINL.webp)](docs/portraits/KAGAINL.webp) | [![Kagain - r](docs/portraits/thumbnails/kagainr.webp)](docs/portraits/kagainr.webp) |
 
 ### Khalid
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Khalid — L](docs/portraits/thumbnails/KHALIDL.webp)](docs/portraits/KHALIDL.webp) | [![Khalid — M](docs/portraits/thumbnails/KHALIDM.webp)](docs/portraits/KHALIDM.webp) | [![Khalid — r](docs/portraits/thumbnails/khalidr.webp)](docs/portraits/khalidr.webp) |
+| [![Khalid - M](docs/portraits/thumbnails/KHALIDM.webp)](docs/portraits/KHALIDM.webp) | [![Khalid - L](docs/portraits/thumbnails/KHALIDL.webp)](docs/portraits/KHALIDL.webp) | [![Khalid - r](docs/portraits/thumbnails/khalidr.webp)](docs/portraits/khalidr.webp) |
 
 ### Kivan
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Kivan — L](docs/portraits/thumbnails/KIVANL.webp)](docs/portraits/KIVANL.webp) | [![Kivan — M](docs/portraits/thumbnails/KIVANM.webp)](docs/portraits/KIVANM.webp) | [![Kivan — r](docs/portraits/thumbnails/kivanr.webp)](docs/portraits/kivanr.webp) |
+| [![Kivan - M](docs/portraits/thumbnails/KIVANM.webp)](docs/portraits/KIVANM.webp) | [![Kivan - L](docs/portraits/thumbnails/KIVANL.webp)](docs/portraits/KIVANL.webp) | [![Kivan - r](docs/portraits/thumbnails/kivanr.webp)](docs/portraits/kivanr.webp) |
 
 ### Minsc
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Minsc — L](docs/portraits/thumbnails/MINSCL.webp)](docs/portraits/MINSCL.webp) | [![Minsc — M](docs/portraits/thumbnails/MINSCM.webp)](docs/portraits/MINSCM.webp) | [![Minsc — r](docs/portraits/thumbnails/minscr.webp)](docs/portraits/minscr.webp) |
-
-### M'Khiin
-
-| L | M | r |
-|:---:|:---:|:---:|
-| [![M'Khiin — L](docs/portraits/thumbnails/MKHIINL.webp)](docs/portraits/MKHIINL.webp) | [![M'Khiin — M](docs/portraits/thumbnails/MKHIINM.webp)](docs/portraits/MKHIINM.webp) | [![M'Khiin — r](docs/portraits/thumbnails/mkhiinr.webp)](docs/portraits/mkhiinr.webp) |
+| [![Minsc - M](docs/portraits/thumbnails/MINSCM.webp)](docs/portraits/MINSCM.webp) | [![Minsc - L](docs/portraits/thumbnails/MINSCL.webp)](docs/portraits/MINSCL.webp) | [![Minsc - r](docs/portraits/thumbnails/minscr.webp)](docs/portraits/minscr.webp) |
 
 ### Montaron
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Montaron — L](docs/portraits/thumbnails/MONTARL.webp)](docs/portraits/MONTARL.webp) | [![Montaron — M](docs/portraits/thumbnails/MONTARM.webp)](docs/portraits/MONTARM.webp) | [![Montaron — r](docs/portraits/thumbnails/montarr.webp)](docs/portraits/montarr.webp) |
+| [![Montaron - M](docs/portraits/thumbnails/MONTARM.webp)](docs/portraits/MONTARM.webp) | [![Montaron - L](docs/portraits/thumbnails/MONTARL.webp)](docs/portraits/MONTARL.webp) | [![Montaron - r](docs/portraits/thumbnails/montarr.webp)](docs/portraits/montarr.webp) |
 
 ### Neera
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Neera — L](docs/portraits/thumbnails/NEERAL.webp)](docs/portraits/NEERAL.webp) | [![Neera — M](docs/portraits/thumbnails/NEERAM.webp)](docs/portraits/NEERAM.webp) | [![Neera — r](docs/portraits/thumbnails/neerar.webp)](docs/portraits/neerar.webp) |
+| [![Neera - M](docs/portraits/thumbnails/NEERAM.webp)](docs/portraits/NEERAM.webp) | [![Neera - L](docs/portraits/thumbnails/NEERAL.webp)](docs/portraits/NEERAL.webp) | [![Neera - r](docs/portraits/thumbnails/neerar.webp)](docs/portraits/neerar.webp) |
 
 ### Quayle
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Quayle — L](docs/portraits/thumbnails/QUAYLEL.webp)](docs/portraits/QUAYLEL.webp) | [![Quayle — M](docs/portraits/thumbnails/QUAYLEM.webp)](docs/portraits/QUAYLEM.webp) | [![Quayle — r](docs/portraits/thumbnails/quayler.webp)](docs/portraits/quayler.webp) |
+| [![Quayle - M](docs/portraits/thumbnails/QUAYLEM.webp)](docs/portraits/QUAYLEM.webp) | [![Quayle - L](docs/portraits/thumbnails/QUAYLEL.webp)](docs/portraits/QUAYLEL.webp) | [![Quayle - r](docs/portraits/thumbnails/quayler.webp)](docs/portraits/quayler.webp) |
 
 ### Rasaad
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Rasaad — L](docs/portraits/thumbnails/RASAADL.webp)](docs/portraits/RASAADL.webp) | [![Rasaad — M](docs/portraits/thumbnails/RASAADM.webp)](docs/portraits/RASAADM.webp) | [![Rasaad — r](docs/portraits/thumbnails/rasaadr.webp)](docs/portraits/rasaadr.webp) |
+| [![Rasaad - M](docs/portraits/thumbnails/RASAADM.webp)](docs/portraits/RASAADM.webp) | [![Rasaad - L](docs/portraits/thumbnails/RASAADL.webp)](docs/portraits/RASAADL.webp) | [![Rasaad - r](docs/portraits/thumbnails/rasaadr.webp)](docs/portraits/rasaadr.webp) |
 
 ### Safana
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Safana — L](docs/portraits/thumbnails/SAFANAL.webp)](docs/portraits/SAFANAL.webp) | [![Safana — M](docs/portraits/thumbnails/SAFANAM.webp)](docs/portraits/SAFANAM.webp) | [![Safana — r](docs/portraits/thumbnails/safanar.webp)](docs/portraits/safanar.webp) |
-
-### Schael
-
-| L | M | r |
-|:---:|:---:|:---:|
-| [![Schael — L](docs/portraits/thumbnails/SCHAELL.webp)](docs/portraits/SCHAELL.webp) | [![Schael — M](docs/portraits/thumbnails/SCHAELM.webp)](docs/portraits/SCHAELM.webp) | [![Schael — r](docs/portraits/thumbnails/schaelr.webp)](docs/portraits/schaelr.webp) |
+| [![Safana - M](docs/portraits/thumbnails/SAFANAM.webp)](docs/portraits/SAFANAM.webp) | [![Safana - L](docs/portraits/thumbnails/SAFANAL.webp)](docs/portraits/SAFANAL.webp) | [![Safana - r](docs/portraits/thumbnails/safanar.webp)](docs/portraits/safanar.webp) |
 
 ### Shar-Teel
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Shar-Teel — L](docs/portraits/thumbnails/SHARTELL.webp)](docs/portraits/SHARTELL.webp) | [![Shar-Teel — M](docs/portraits/thumbnails/SHARTELM.webp)](docs/portraits/SHARTELM.webp) | [![Shar-Teel — r](docs/portraits/thumbnails/shartelr.webp)](docs/portraits/shartelr.webp) |
+| [![Shar-Teel - M](docs/portraits/thumbnails/SHARTELM.webp)](docs/portraits/SHARTELM.webp) | [![Shar-Teel - L](docs/portraits/thumbnails/SHARTELL.webp)](docs/portraits/SHARTELL.webp) | [![Shar-Teel - r](docs/portraits/thumbnails/shartelr.webp)](docs/portraits/shartelr.webp) |
 
 ### Skie
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Skie — L](docs/portraits/thumbnails/SKIEL.webp)](docs/portraits/SKIEL.webp) | [![Skie — M](docs/portraits/thumbnails/SKIEM.webp)](docs/portraits/SKIEM.webp) | [![Skie — r](docs/portraits/thumbnails/skier.webp)](docs/portraits/skier.webp) |
+| [![Skie - M](docs/portraits/thumbnails/SKIEM.webp)](docs/portraits/SKIEM.webp) | [![Skie - L](docs/portraits/thumbnails/SKIEL.webp)](docs/portraits/SKIEL.webp) | [![Skie - r](docs/portraits/thumbnails/skier.webp)](docs/portraits/skier.webp) |
 
 ### Tiax
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Tiax — L](docs/portraits/thumbnails/TIAXL.webp)](docs/portraits/TIAXL.webp) | [![Tiax — M](docs/portraits/thumbnails/TIAXM.webp)](docs/portraits/TIAXM.webp) | [![Tiax — r](docs/portraits/thumbnails/tiaxr.webp)](docs/portraits/tiaxr.webp) |
+| [![Tiax - M](docs/portraits/thumbnails/TIAXM.webp)](docs/portraits/TIAXM.webp) | [![Tiax - L](docs/portraits/thumbnails/TIAXL.webp)](docs/portraits/TIAXL.webp) | [![Tiax - r](docs/portraits/thumbnails/tiaxr.webp)](docs/portraits/tiaxr.webp) |
 
 ### Viconia
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Viconia — L](docs/portraits/thumbnails/VICONIAL.webp)](docs/portraits/VICONIAL.webp) | [![Viconia — M](docs/portraits/thumbnails/VICONIAM.webp)](docs/portraits/VICONIAM.webp) | [![Viconia — r](docs/portraits/thumbnails/viconiar.webp)](docs/portraits/viconiar.webp) |
-
-### Voghiln
-
-| L | M | r |
-|:---:|:---:|:---:|
-| [![Voghiln — L](docs/portraits/thumbnails/VOGHILNL.webp)](docs/portraits/VOGHILNL.webp) | [![Voghiln — M](docs/portraits/thumbnails/VOGHILNM.webp)](docs/portraits/VOGHILNM.webp) | [![Voghiln — r](docs/portraits/thumbnails/voghilnr.webp)](docs/portraits/voghilnr.webp) |
+| [![Viconia - M](docs/portraits/thumbnails/VICONIAM.webp)](docs/portraits/VICONIAM.webp) | [![Viconia - L](docs/portraits/thumbnails/VICONIAL.webp)](docs/portraits/VICONIAL.webp) | [![Viconia - r](docs/portraits/thumbnails/viconiar.webp)](docs/portraits/viconiar.webp) |
 
 ### Xan
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Xan — L](docs/portraits/thumbnails/XANL.webp)](docs/portraits/XANL.webp) | [![Xan — M](docs/portraits/thumbnails/XANM.webp)](docs/portraits/XANM.webp) | [![Xan — r](docs/portraits/thumbnails/xanr.webp)](docs/portraits/xanr.webp) |
+| [![Xan - M](docs/portraits/thumbnails/XANM.webp)](docs/portraits/XANM.webp) | [![Xan - L](docs/portraits/thumbnails/XANL.webp)](docs/portraits/XANL.webp) | [![Xan - r](docs/portraits/thumbnails/xanr.webp)](docs/portraits/xanr.webp) |
 
 ### Xzar
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Xzar — L](docs/portraits/thumbnails/XZARL.webp)](docs/portraits/XZARL.webp) | [![Xzar — M](docs/portraits/thumbnails/XZARM.webp)](docs/portraits/XZARM.webp) | [![Xzar — r](docs/portraits/thumbnails/xzarr.webp)](docs/portraits/xzarr.webp) |
+| [![Xzar - M](docs/portraits/thumbnails/XZARM.webp)](docs/portraits/XZARM.webp) | [![Xzar - L](docs/portraits/thumbnails/XZARL.webp)](docs/portraits/XZARL.webp) | [![Xzar - r](docs/portraits/thumbnails/xzarr.webp)](docs/portraits/xzarr.webp) |
 
 ### Yeslick
 
-| L | M | r |
+| M/S | L | r |
 |:---:|:---:|:---:|
-| [![Yeslick — L](docs/portraits/thumbnails/YESLICKL.webp)](docs/portraits/YESLICKL.webp) | [![Yeslick — M](docs/portraits/thumbnails/YESLICKM.webp)](docs/portraits/YESLICKM.webp) | [![Yeslick — r](docs/portraits/thumbnails/yeslickr.webp)](docs/portraits/yeslickr.webp) |
+| [![Yeslick - M](docs/portraits/thumbnails/YESLICKM.webp)](docs/portraits/YESLICKM.webp) | [![Yeslick - L](docs/portraits/thumbnails/YESLICKL.webp)](docs/portraits/YESLICKL.webp) | [![Yeslick - r](docs/portraits/thumbnails/yeslickr.webp)](docs/portraits/yeslickr.webp) |
 
+### Imoen SoD
 
+| M/S | L | r |
+|:---:|:---:|:---:|
+| [![Baldur's Gate: Siege of Dragonspear — Imoen - M](docs/portraits/thumbnails/BDIMOENM.webp)](docs/portraits/BDIMOENM.webp) | [![Baldur's Gate: Siege of Dragonspear — Imoen - L](docs/portraits/thumbnails/BDIMOENL.webp)](docs/portraits/BDIMOENL.webp) | [![Baldur's Gate: Siege of Dragonspear — Imoen - r](docs/portraits/thumbnails/bdimoenr.webp)](docs/portraits/bdimoenr.webp) |
 
-## Credits
+### Viconia SoD
 
-- **shaigan** — mod author
-- **Isandir** — original portrait pack (extended for this mod)
+| M/S | L | r |
+|:---:|:---:|:---:|
+| [![Baldur's Gate: Siege of Dragonspear — Viconia - M](docs/portraits/thumbnails/BDVICONM.webp)](docs/portraits/BDVICONM.webp) | [![Baldur's Gate: Siege of Dragonspear — Viconia - L](docs/portraits/thumbnails/BDVICONL.webp)](docs/portraits/BDVICONL.webp) | [![Baldur's Gate: Siege of Dragonspear — Viconia - r](docs/portraits/thumbnails/bdviconr.webp)](docs/portraits/bdviconr.webp) |
+
+### Caelar
+
+| M/S | L | r |
+|:---:|:---:|:---:|
+| [![Caelar - M](docs/portraits/thumbnails/CAELARM.webp)](docs/portraits/CAELARM.webp) | [![Caelar - L](docs/portraits/thumbnails/CAELARL.webp)](docs/portraits/CAELARL.webp) | [![Caelar - r](docs/portraits/thumbnails/caelarr.webp)](docs/portraits/caelarr.webp) |
+
+### Glint
+
+| M/S | L | r |
+|:---:|:---:|:---:|
+| [![Glint - M](docs/portraits/thumbnails/GLINTM.webp)](docs/portraits/GLINTM.webp) | [![Glint - L](docs/portraits/thumbnails/GLINTL.webp)](docs/portraits/GLINTL.webp) | [![Glint - r](docs/portraits/thumbnails/glintr.webp)](docs/portraits/glintr.webp) |
+
+### M'Khiin
+
+| M/S | L | r |
+|:---:|:---:|:---:|
+| [![M'Khiin - M](docs/portraits/thumbnails/MKHIINM.webp)](docs/portraits/MKHIINM.webp) | [![M'Khiin - L](docs/portraits/thumbnails/MKHIINL.webp)](docs/portraits/MKHIINL.webp) | [![M'Khiin - r](docs/portraits/thumbnails/mkhiinr.webp)](docs/portraits/mkhiinr.webp) |
+
+### Schael
+
+| M/S | L | r |
+|:---:|:---:|:---:|
+| [![Schael - M](docs/portraits/thumbnails/SCHAELM.webp)](docs/portraits/SCHAELM.webp) | [![Schael - L](docs/portraits/thumbnails/SCHAELL.webp)](docs/portraits/SCHAELL.webp) | [![Schael - r](docs/portraits/thumbnails/schaelr.webp)](docs/portraits/schaelr.webp) |
+
+### Voghiln
+
+| M/S | L | r |
+|:---:|:---:|:---:|
+| [![Voghiln - M](docs/portraits/thumbnails/VOGHILNM.webp)](docs/portraits/VOGHILNM.webp) | [![Voghiln - L](docs/portraits/thumbnails/VOGHILNL.webp)](docs/portraits/VOGHILNL.webp) | [![Voghiln - r](docs/portraits/thumbnails/voghilnr.webp)](docs/portraits/voghilnr.webp) |
+## Credits/thanks
+
+- **shaigan** — mod/portraits author
+- **Isandir** — original PC portrait pack
+- **Wombat** — main inspiration
+- **Vasculio** — base/ideas for BG1 portraits enhancements, inspiration
+- **DosEquis** — base/ideas for BG1 portraits enhancements, inspiration
