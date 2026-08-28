@@ -1,0 +1,73 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY npc_portraits BEGIN
+  "GENDWRF" => 1
+  "AJANTIS" => 1
+  "CORAN" => 1
+  "EDWIN" => 1
+  "ELDOTH" => 1
+  "GARRICK" => 1
+  "KAGAIN" => 1
+  "KHALID" => 1
+  "KIVAN" => 1
+  "MINSC" => 1
+  "MONTAR" => 1
+  "QUAYLE" => 1
+  "TIAX" => 1
+  "XAN" => 1
+  "XZAR" => 1
+  "YESLICK" => 1
+  "NCERND" => 1
+  "NKELDOR" => 1
+  "NANOMEN" => 1
+  "NEDWIN" => 1
+  "NHAER" => 1
+  "NJAN" => 1
+  "NMINSC" => 1
+  "NVALYGA" => 1
+  "NYOSHIM" => 1
+  "NKORGAN" => 1
+  "RASAAD" => 1
+  "DORN" => 1
+  "GLINT" => 1
+  "VOGHILN" => 1
+  "BAELOTH" => 1
+  "hephern" => 1
+  "ALORA" => 1
+  "BRANWE" => 1
+  "DYNAHEI" => 1
+  "FALDORN" => 1
+  "IMOEN" => 1
+  "JAHEIRA" => 1
+  "SAFANA" => 1
+  "SHARTEL" => 1
+  "SKIE" => 1
+  "VICONIA" => 1
+  "NNALIA" => 1
+  "NMAZZY" => 1
+  "NAERIE" => 1
+  "NJAHEIR" => 1
+  "NVICON" => 1
+  "BDVICON" => 1
+  "BDIMOEN" => 1
+  "NEERA" => 1
+  "DSCLARA" => 1
+  "OHHEXX" => 1
+  "caelar" => 1
+  "mkhiin" => 1
+  "unnamed" => 1
+  "SCHAEL" => 1
+END
+
+ACTION_IF (infinityui = 1) BEGIN
+  OUTER_TEXT_SPRINT portrait_list ~UI.MENU~
+END
+ELSE BEGIN
+  OUTER_TEXT_SPRINT portrait_list ~BGEE.LUA~
+END
+
+ACTION_PHP_EACH npc_portraits AS portrait => _ BEGIN
+  COPY_EXISTING ~%portrait_list%~ ~override~
+    // No ^ anchor: WeiDU regexp ^ is start-of-file only, not start-of-line
+    REPLACE_TEXTUALLY ~[ %TAB%]*{'%portrait%',[ %TAB%]+[12]+},[%LNL%%WNL%]*~ ~~
+    REPLACE_TEXTUALLY ~[ %TAB%]*{'%portrait%',[ %TAB%]+[12]+}[%LNL%%WNL%]*~ ~~
+  BUT_ONLY
+END

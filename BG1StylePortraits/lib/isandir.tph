@@ -1,0 +1,64 @@
+OUTER_TEXT_SPRINT female     ~%MOD_FOLDER%/portraits/female~
+OUTER_TEXT_SPRINT male       ~%MOD_FOLDER%/portraits/male~
+
+// Standard EE UI (vanilla / LeUI): M_*.lua with table.insert
+ACTION_IF (infinityui = 0) BEGIN
+<<<<<<<< .../temp/M_b1port
+function addPortrait(name, gender)
+  table.insert(portraits, {name, gender})
+end
+>>>>>>>>
+  COPY ~.../temp/M_b1port~ ~override/M_b1port.lua~
+END
+
+// Infinity UI++: prep markers in UI.MENU
+ACTION_IF (infinityui = 1) BEGIN
+  COPY_EXISTING ~UI.MENU~  ~override~
+    REPLACE_TEXTUALLY ~{'GENMHLF', 1},~ ~{'GENMHLF', 1},
+  shamarker1~
+    REPLACE_TEXTUALLY ~{'WOMAN2', 2},~ ~{'WOMAN2', 2},
+  shamarker2~
+  BUT_ONLY
+END
+
+ACTION_BASH_FOR ~%male%~ ~^.+\.bmp$~ BEGIN
+  ACTION_IF (infinityui = 0) BEGIN
+    // ARM0511_ is already 8 chars; cannot form a valid *L resref
+    ACTION_IF (~%BASH_FOR_RES%~ STRING_EQUAL_CASE ~ARM0511_~) BEGIN
+      COPY ~%BASH_FOR_FILESPEC%~ ~override~
+    END
+    ELSE BEGIN
+      APPEND ~M_b1port.lua~ ~addPortrait("%BASH_FOR_RES%", 1)~
+      COPY ~%BASH_FOR_FILESPEC%~ ~override/%BASH_FOR_RES%L.bmp~
+    END
+  END
+  ELSE BEGIN
+    COPY_EXISTING ~UI.MENU~  ~override~
+      REPLACE_TEXTUALLY ~shamarker1~ ~{'%BASH_FOR_RES%', 1},
+  shamarker1~
+    BUT_ONLY
+    COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  END
+END
+
+ACTION_BASH_FOR ~%female%~ ~^.+\.bmp$~ BEGIN
+  ACTION_IF (infinityui = 0) BEGIN
+    APPEND ~M_b1port.lua~ ~addPortrait("%BASH_FOR_RES%", 2)~
+    COPY ~%BASH_FOR_FILESPEC%~ ~override/%BASH_FOR_RES%L.bmp~
+  END
+  ELSE BEGIN
+    COPY_EXISTING ~UI.MENU~  ~override~
+      REPLACE_TEXTUALLY ~shamarker2~ ~{'%BASH_FOR_RES%', 2},
+  shamarker2~
+    BUT_ONLY
+    COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  END
+END
+
+// Clean up Infinity markers
+ACTION_IF (infinityui = 1) BEGIN
+  COPY_EXISTING ~UI.MENU~  ~override~
+    REPLACE_TEXTUALLY ~shamarker1~  ~~
+    REPLACE_TEXTUALLY ~shamarker2~  ~~
+  BUT_ONLY
+END

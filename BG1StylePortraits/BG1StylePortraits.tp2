@@ -1,0 +1,38 @@
+BACKUP ~weidu_external/backup/BG1StylePortraits~
+AUTHOR ~shaigan~
+VERSION ~0.1.0~
+
+LANGUAGE ~English~
+         ~english~
+         ~BG1StylePortraits/tra/english/setup.tra~
+
+BEGIN @11 // Make the portraits already assigned to NPC (like Jaheira, Minsc) unavailable for the player to choose as <CHARNAME> portrait
+  REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) @1
+  REQUIRE_PREDICATE (
+    (RESOURCE_CONTAINS ~UI.MENU~ ~rgGetGameEnginePortraits~)
+    OR (RESOURCE_CONTAINS ~BGEE.LUA~ ~portraits~)
+  ) @2
+  DESIGNATED 10
+  LABEL ~B1StylePortraits_Clear_PC_Portraits~
+
+  INCLUDE ~%MOD_FOLDER%/lib/detect_ui.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/clear_pc_portraits.tph~
+
+BEGIN @12 // Extended Isandir's Portrait Pack
+  REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) @1
+  REQUIRE_PREDICATE (
+    (RESOURCE_CONTAINS ~UI.MENU~ ~rgGetGameEnginePortraits~)
+    OR (RESOURCE_CONTAINS ~BGEE.LUA~ ~portraits~)
+  ) @2
+  DESIGNATED 20
+  LABEL ~B1StylePortraits_Isandir~
+
+  INCLUDE ~%MOD_FOLDER%/lib/detect_ui.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/isandir.tph~
+
+BEGIN @13 // Add new portraits to original party NPCs
+  REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet~ @10
+  DESIGNATED 30
+  LABEL ~HPSPP-B1StylePortraits_EnhancedBG1~
+  
+  COPY ~%MOD_FOLDER%/portraits/playable_npcs_bg1~ ~override~

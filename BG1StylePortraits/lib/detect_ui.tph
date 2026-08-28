@@ -1,0 +1,4 @@
+OUTER_SET infinityui = 0
+ACTION_IF (RESOURCE_CONTAINS ~UI.MENU~ ~rgGetGameEnginePortraits~) BEGIN
+  OUTER_SET infinityui = 1
+END
