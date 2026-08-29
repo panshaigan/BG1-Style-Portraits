@@ -45,6 +45,15 @@ Each NPC portrait uses three size variants:
 - **L** — character record/inventory (base portrait)
 - **r** — additional portrait at the Infinity UI inventory screen (zoomed out)
 
+The majority of the portraits are simply upscaled and enhanced versions of the originals (with added details and lore-accurate fixes, such as removing the pointy ears from the halfling portraits or giving Viconia white hair).
+However, a few more controversial decisions were made:
+
+- Faldorn no longer looks like a vampiric Meryl Streep.
+- Imoen received a more extensive rework than the others, as I always felt her original portrait was rushed and somewhat disappointing.
+- Jaheira... well, this one may be the most controversial. As we know, there is no consistency between her appearance in BG1 and BG2 (and the BG2 version was, frankly, rather unfortunate), so there is no true canon look. For that reason I decided to use Wombat’s Jaheira face and keep it consistent with the upcoming BG2 portraits component.
+- Viconia was given some luminescent war paint.
+- Xan's face was dehumanized.
+
 Click a thumbnail to view the full-size portrait.
 
 | **Ajantis** | | | **Alora** | | |
@@ -139,9 +148,9 @@ Click a thumbnail to view the full-size portrait.
 
 ## Credits/thanks
 
-- **shaigan** — mod/portraits author
 - **Isandir** — original PC portrait pack
-- **Wombat** — main inspiration
-- **Vasculio** — base/ideas for BG1 portraits enhancements, inspiration
-- **DosEquis** — base/ideas for BG1 portraits enhancements, inspiration
+- **Wombat** — main inspiration to BG1ize all the portraits
+- **Vasculio** — base/ideas for BG1 portraits enhancements
+- **DosEquis** — base/ideas for BG1 portraits enhancements
+- **shaigan** — the mod author
 
