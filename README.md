@@ -41,9 +41,9 @@ This component replaces portraits for 36 recruitable NPCs with enhanced BG1-styl
 
 Each NPC portrait uses three size variants:
 
-- **M/S** — in-game (zoomed in)
-- **L** — character record/inventory (base portrait)
-- **r** — additional portrait at the Infinity UI inventory screen (zoomed out)
+- **M/S** - in-game (zoomed in)
+- **L** - character record/inventory (base portrait)
+- **r** - additional portrait at the Infinity UI inventory screen (zoomed out)
 
 The majority of the portraits are simply upscaled and enhanced versions of the originals (with added details and lore-accurate fixes, such as removing the pointy ears from the halfling portraits or giving Viconia white hair).
 However, a few more controversial decisions were made:
@@ -131,12 +131,12 @@ Click a thumbnail to view the full-size portrait.
 | **Yeslick** | | | **Imoen SoD** | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | M/S | L | r | M/S | L | r |
-| [![Yeslick - M](docs/portraits/thumbnails/YESLICKM.webp)](docs/portraits/YESLICKM.webp) | [![Yeslick - L](docs/portraits/thumbnails/YESLICKL.webp)](docs/portraits/YESLICKL.webp) | [![Yeslick - r](docs/portraits/thumbnails/yeslickr.webp)](docs/portraits/yeslickr.webp) | [![Baldur's Gate: Siege of Dragonspear — Imoen - M](docs/portraits/thumbnails/BDIMOENM.webp)](docs/portraits/BDIMOENM.webp) | [![Baldur's Gate: Siege of Dragonspear — Imoen - L](docs/portraits/thumbnails/BDIMOENL.webp)](docs/portraits/BDIMOENL.webp) | [![Baldur's Gate: Siege of Dragonspear — Imoen - r](docs/portraits/thumbnails/bdimoenr.webp)](docs/portraits/bdimoenr.webp) |
+| [![Yeslick - M](docs/portraits/thumbnails/YESLICKM.webp)](docs/portraits/YESLICKM.webp) | [![Yeslick - L](docs/portraits/thumbnails/YESLICKL.webp)](docs/portraits/YESLICKL.webp) | [![Yeslick - r](docs/portraits/thumbnails/yeslickr.webp)](docs/portraits/yeslickr.webp) | [![Baldur's Gate: Siege of Dragonspear - Imoen - M](docs/portraits/thumbnails/BDIMOENM.webp)](docs/portraits/BDIMOENM.webp) | [![Baldur's Gate: Siege of Dragonspear - Imoen - L](docs/portraits/thumbnails/BDIMOENL.webp)](docs/portraits/BDIMOENL.webp) | [![Baldur's Gate: Siege of Dragonspear - Imoen - r](docs/portraits/thumbnails/bdimoenr.webp)](docs/portraits/bdimoenr.webp) |
 
 | **Viconia SoD** | | | **Caelar** | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | M/S | L | r | M/S | L | r |
-| [![Baldur's Gate: Siege of Dragonspear — Viconia - M](docs/portraits/thumbnails/BDVICONM.webp)](docs/portraits/BDVICONM.webp) | [![Baldur's Gate: Siege of Dragonspear — Viconia - L](docs/portraits/thumbnails/BDVICONL.webp)](docs/portraits/BDVICONL.webp) | [![Baldur's Gate: Siege of Dragonspear — Viconia - r](docs/portraits/thumbnails/bdviconr.webp)](docs/portraits/bdviconr.webp) | [![Caelar - M](docs/portraits/thumbnails/CAELARM.webp)](docs/portraits/CAELARM.webp) | [![Caelar - L](docs/portraits/thumbnails/CAELARL.webp)](docs/portraits/CAELARL.webp) | [![Caelar - r](docs/portraits/thumbnails/caelarr.webp)](docs/portraits/caelarr.webp) |
+| [![Baldur's Gate: Siege of Dragonspear - Viconia - M](docs/portraits/thumbnails/BDVICONM.webp)](docs/portraits/BDVICONM.webp) | [![Baldur's Gate: Siege of Dragonspear - Viconia - L](docs/portraits/thumbnails/BDVICONL.webp)](docs/portraits/BDVICONL.webp) | [![Baldur's Gate: Siege of Dragonspear - Viconia - r](docs/portraits/thumbnails/bdviconr.webp)](docs/portraits/bdviconr.webp) | [![Caelar - M](docs/portraits/thumbnails/CAELARM.webp)](docs/portraits/CAELARM.webp) | [![Caelar - L](docs/portraits/thumbnails/CAELARL.webp)](docs/portraits/CAELARL.webp) | [![Caelar - r](docs/portraits/thumbnails/caelarr.webp)](docs/portraits/caelarr.webp) |
 
 | **Glint** | | | **M'Khiin** | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
@@ -150,10 +150,10 @@ Click a thumbnail to view the full-size portrait.
 
 ## Credits/thanks
 
-- **Wombat** — main inspiration to BG1ize all the portraits
-- **Vasculio** — base/ideas for BG1 portraits enhancements
-- **DosEquis** — base/ideas for BG1 portraits enhancements
-- **Isandir** — original PC portrait pack
-- **ALIEN, Argent77, Bubb, CamDawg, DavidW, GraionDilach, K4thos, jastey, Pecca** — without their effort there would be no sense in modding the 30 years old game.
-- **shaigan** — the mod author
+- **Wombat** - main inspiration to BG1ize all the portraits
+- **Vasculio** - base/ideas for BG1 portraits enhancements
+- **DosEquis** - base/ideas for BG1 portraits enhancements
+- **Isandir** - original PC portrait pack
+- **ALIEN, Argent77, Bubb, CamDawg, DavidW, GraionDilach, K4thos, jastey, Pecca** - without their effort there would be no sense in modding the 30 years old game.
+- **shaigan** - the mod author
 
