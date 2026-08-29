@@ -11,7 +11,7 @@
 
 ## Overview
 
-This WeiDU mod aims to improve the quality and consistency of party NPC portraits, especially in EET. The first release features BG1 and SoD NPC portraits, with components for BG2 and NPC mods planned for future releases.
+This WeiDU mod aims to improve the quality and consistency of party NPC portraits, especially in EET. The first release features BG1 and SoD NPC portraits, with components for BG2 and NPC mods planned for future releases. The last milestone would be the custom PC portraits.
 
 The mod supports the vanilla EE UI, LeUI, and Infinity UI++.
 
@@ -53,6 +53,8 @@ However, a few more controversial decisions were made:
 - Jaheira... well, this one may be the most controversial. As we know, there is no consistency between her appearance in BG1 and BG2 (and the BG2 version was, frankly, rather unfortunate), so there is no true canon look. For that reason I decided to use Wombat’s Jaheira face and keep it consistent with the upcoming BG2 portraits component.
 - Viconia was given some luminescent war paint.
 - Xan's face was dehumanized.
+
+[![BG 1 Portraits](docs/pack_thumbnail.webp)](docs/pack.webp)
 
 Click a thumbnail to view the full-size portrait.
 
@@ -148,9 +150,10 @@ Click a thumbnail to view the full-size portrait.
 
 ## Credits/thanks
 
-- **Isandir** — original PC portrait pack
 - **Wombat** — main inspiration to BG1ize all the portraits
 - **Vasculio** — base/ideas for BG1 portraits enhancements
 - **DosEquis** — base/ideas for BG1 portraits enhancements
+- **Isandir** — original PC portrait pack
+- **ALIEN, Argent77, Bubb, CamDawg, DavidW, GraionDilach, K4thos, jastey, Pecca** — without their effort there would be no sense in modding the 30 years old game.
 - **shaigan** — the mod author
 
