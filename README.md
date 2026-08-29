@@ -7,7 +7,9 @@
 # BG1 Style Portraits
 *BG1-style portraits for BG:EE, BG2:EE and EET.*
 
-[![G3 Forums](https://img.shields.io/static/v1?label=Discussion&message=G3%20Forums%20%28coming%20soon%29&color=3b45a3&labelColor=eee&style=for-the-badge)](#)
+[![G3 Forums](https://img.shields.io/static/v1?label=Discussion&message=G3%20Forums&color=3b45a3&labelColor=eee&style=for-the-badge)](#https://www.gibberlings3.net/forums/topic/41525-bg1-style-portraits/)
+
+[![Beamdog](https://img.shields.io/static/v1?label=Discussion&message=Beamdog&color=3b45a3&labelColor=eee&style=for-the-badge)](#https://forums.beamdog.com/discussion/comment/1225314)
 
 ## Overview
 
