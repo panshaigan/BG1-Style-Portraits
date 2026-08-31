@@ -45,9 +45,10 @@ BEGIN @14 // Enhanced BG2 NPC Portraits
   COPY ~%MOD_FOLDER%/portraits/playable_npcs_bg2~ ~override~
 
   INCLUDE ~%MOD_FOLDER%/lib/edwina.tph~
+
   INCLUDE ~%MOD_FOLDER%/lib/npc_functions.tph~
 
-  // Dorn ---
+  // Baeloth ---
   OUTER_TEXT_SPRINT a7_portrait_change ~a7_pblt~
   COPY ~%MOD_FOLDER%/spells/a7_pxxx.spl~ ~override/%a7_portrait_change%.spl~
     LPF ALTER_SPELL_EFFECT_RESREF
