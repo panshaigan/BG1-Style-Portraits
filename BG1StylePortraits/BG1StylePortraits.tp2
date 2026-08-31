@@ -37,7 +37,7 @@ BEGIN @13 // Enhanced BG1 NPC Portraits
   
   COPY ~%MOD_FOLDER%/portraits/playable_npcs_bg1~ ~override~
 
-BEGIN @14 // Enhanced BG2 NPC Portraits
+BEGIN @14 // New BG2 NPC Portraits
   REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10
   DESIGNATED 40
   LABEL ~B1StylePortraits_EnhancedBG2~

@@ -60,7 +60,7 @@ However, a few more controversial decisions were made:
 
 See the [BG1 portrait gallery](docs/gallery_bg1.md) for individual portraits.
 
-### Enhanced BG2 NPC Portraits *(BG2:EE and EET)*
+### New BG2 NPC Portraits *(BG2:EE and EET)*
 
 This component replaces portraits for recruitable BG2 NPCs with enhanced BG1-style art. 
 
