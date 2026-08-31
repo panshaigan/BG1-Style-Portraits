@@ -30,9 +30,115 @@ BEGIN @12 // Extended Isandir's Portrait Pack
   INCLUDE ~%MOD_FOLDER%/lib/detect_ui.tph~
   INCLUDE ~%MOD_FOLDER%/lib/isandir.tph~
 
-BEGIN @13 // Add new portraits to original party NPCs
+BEGIN @13 // Enhanced BG1 NPC Portraits
   REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet~ @10
   DESIGNATED 30
-  LABEL ~HPSPP-B1StylePortraits_EnhancedBG1~
+  LABEL ~B1StylePortraits_EnhancedBG1~
   
   COPY ~%MOD_FOLDER%/portraits/playable_npcs_bg1~ ~override~
+
+BEGIN @14 // Enhanced BG2 NPC Portraits
+  REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10
+  DESIGNATED 40
+  LABEL ~B1StylePortraits_EnhancedBG2~
+
+  COPY ~%MOD_FOLDER%/portraits/playable_npcs_bg2~ ~override~
+
+  INCLUDE ~%MOD_FOLDER%/lib/edwina.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/npc_functions.tph~
+
+  // Dorn ---
+  OUTER_TEXT_SPRINT a7_portrait_change ~a7_pblt~
+  COPY ~%MOD_FOLDER%/spells/a7_pxxx.spl~ ~override/%a7_portrait_change%.spl~
+    LPF ALTER_SPELL_EFFECT_RESREF
+      INT_VAR match_opcode = 107
+      STR_VAR match_resource = ~A7PORTM~ resource = ~A7_BLTHM~
+    END
+
+    LPF ALTER_SPELL_EFFECT_RESREF
+      INT_VAR match_opcode = 107
+      STR_VAR match_resource = ~A7PORTL~ resource = ~A7_BLTHL~
+    END
+
+  ACTION_FOR_EACH script IN ~baeloth~ ~bdbaelot~ BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN
+      EXTEND_TOP ~%script%.bcs~ ~%MOD_FOLDER%/scripts/portrait_change.baf~ EVAL
+    END
+  END
+
+  // Dorn ---
+  OUTER_TEXT_SPRINT a7_portrait_change ~a7_pdrn~
+  COPY ~%MOD_FOLDER%/spells/a7_pxxx.spl~ ~override/%a7_portrait_change%.spl~
+    LPF ALTER_SPELL_EFFECT_RESREF
+      INT_VAR match_opcode = 107
+      STR_VAR match_resource = ~A7PORTM~ resource = ~NDORNM~
+    END
+    LPF ALTER_SPELL_EFFECT_RESREF
+      INT_VAR match_opcode = 107
+      STR_VAR match_resource = ~A7PORTL~ resource = ~NDORNL~
+    END
+
+  ACTION_FOR_EACH script IN ~dorn_~ ~dorn~ ~dorn25~ BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN
+      EXTEND_TOP ~%script%.bcs~ ~%MOD_FOLDER%/scripts/portrait_change.baf~ EVAL
+    END
+  END
+
+  LAF UPDATE_EPILOG_PORTRAIT
+  STR_VAR
+    match_portrait = ~DORN.*~
+    portrait = ~NDORNL~
+  END
+
+
+  // Neera ---
+  OUTER_TEXT_SPRINT a7_portrait_change ~a7_pner~
+  COPY ~%MOD_FOLDER%/spells/a7_pxxx.spl~ ~override/%a7_portrait_change%.spl~
+    LPF ALTER_SPELL_EFFECT_RESREF
+      INT_VAR match_opcode = 107
+      STR_VAR match_resource = ~A7PORTM~ resource = ~NNEERAM~
+    END
+    LPF ALTER_SPELL_EFFECT_RESREF
+      INT_VAR match_opcode = 107
+      STR_VAR match_resource = ~A7PORTL~ resource = ~NNEERAL~
+    END
+
+  ACTION_FOR_EACH script IN ~neera_~ ~neera~ ~neer25~ BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN
+      EXTEND_TOP ~%script%.bcs~ ~%MOD_FOLDER%/scripts/portrait_change.baf~ EVAL
+    END
+  END
+
+  ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+    LAF UPDATE_EPILOG_PORTRAIT
+    STR_VAR
+      match_portrait = ~NEERA.*~
+      portrait = ~NNEERAL~
+    END
+  END
+
+  // Rasaad ---
+  OUTER_TEXT_SPRINT a7_portrait_change ~a7_prsd~
+  COPY ~%MOD_FOLDER%/spells/a7_pxxx.spl~ ~override/%a7_portrait_change%.spl~
+    LPF ALTER_SPELL_EFFECT_RESREF
+      INT_VAR match_opcode = 107
+      STR_VAR match_resource = ~A7PORTM~ resource = ~NRASAADM~
+    END
+    LPF ALTER_SPELL_EFFECT_RESREF
+      INT_VAR match_opcode = 107
+      STR_VAR match_resource = ~A7PORTL~ resource = ~NRASAADL~
+    END
+
+  ACTION_FOR_EACH script IN ~rasaad_~ ~rasaad~ ~rasa25~ BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN
+      EXTEND_TOP ~%script%.bcs~ ~%MOD_FOLDER%/scripts/portrait_change.baf~ EVAL
+    END
+  END
+
+  ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+    LAF UPDATE_EPILOG_PORTRAIT
+    STR_VAR
+      match_portrait = ~RASAAD.*~
+      portrait = ~NRASAADL~
+    END
+  END
