@@ -96,20 +96,20 @@ END
 
 ACTION_IF (GAME_IS ~bg2ee~) BEGIN
   ACTION_IF (NOT GAME_IS ~eet~) BEGIN
-    COPY ~%MOD_FOLDER%/portraits/playable_npcs_bg2/NBAELOTL.bmp~ ~override/BAELOTHL.bmp~
-    COPY ~%MOD_FOLDER%/portraits/playable_npcs_bg2/NBAELOTM.bmp~ ~override/BAELOTHM.bmp~
-    COPY ~%MOD_FOLDER%/portraits/playable_npcs_bg2/nbaelotr.bmp~ ~override/baelothr.bmp~
+    COPY ~%MOD_FOLDER%/portraits/party_bg2/NBAELOTL.bmp~ ~override/BAELOTHL.bmp~
+    COPY ~%MOD_FOLDER%/portraits/party_bg2/NBAELOTM.bmp~ ~override/BAELOTHM.bmp~
+    COPY ~%MOD_FOLDER%/portraits/party_bg2/nbaelotr.bmp~ ~override/baelothr.bmp~
 
-    COPY ~%MOD_FOLDER%/portraits/playable_npcs_bg2/NDORNL.bmp~ ~override/DORNL.bmp~
-    COPY ~%MOD_FOLDER%/portraits/playable_npcs_bg2/NDORNM.bmp~ ~override/DORNM.bmp~
-    COPY ~%MOD_FOLDER%/portraits/playable_npcs_bg2/ndornr.bmp~ ~override/dornr.bmp~
+    COPY ~%MOD_FOLDER%/portraits/party_bg2/NDORNL.bmp~ ~override/DORNL.bmp~
+    COPY ~%MOD_FOLDER%/portraits/party_bg2/NDORNM.bmp~ ~override/DORNM.bmp~
+    COPY ~%MOD_FOLDER%/portraits/party_bg2/ndornr.bmp~ ~override/dornr.bmp~
 
-    COPY ~%MOD_FOLDER%/portraits/playable_npcs_bg2/NNEERAL.bmp~ ~override/NEERAL.bmp~
-    COPY ~%MOD_FOLDER%/portraits/playable_npcs_bg2/NNEERAM.bmp~ ~override/NEERAM.bmp~
-    COPY ~%MOD_FOLDER%/portraits/playable_npcs_bg2/nneerar.bmp~ ~override/neerar.bmp~
+    COPY ~%MOD_FOLDER%/portraits/party_bg2/NNEERAL.bmp~ ~override/NEERAL.bmp~
+    COPY ~%MOD_FOLDER%/portraits/party_bg2/NNEERAM.bmp~ ~override/NEERAM.bmp~
+    COPY ~%MOD_FOLDER%/portraits/party_bg2/nneerar.bmp~ ~override/neerar.bmp~
 
-    COPY ~%MOD_FOLDER%/portraits/playable_npcs_bg2/NRASAADL.bmp~ ~override/RASAADL.bmp~
-    COPY ~%MOD_FOLDER%/portraits/playable_npcs_bg2/NRASAADM.bmp~ ~override/RASAADM.bmp~
-    COPY ~%MOD_FOLDER%/portraits/playable_npcs_bg2/nrasaadr.bmp~ ~override/rasaadr.bmp~
+    COPY ~%MOD_FOLDER%/portraits/party_bg2/NRASAADL.bmp~ ~override/RASAADL.bmp~
+    COPY ~%MOD_FOLDER%/portraits/party_bg2/NRASAADM.bmp~ ~override/RASAADM.bmp~
+    COPY ~%MOD_FOLDER%/portraits/party_bg2/nrasaadr.bmp~ ~override/rasaadr.bmp~
   END
 END

@@ -35,14 +35,14 @@ BEGIN @13 // Enhanced BG1 NPC Portraits
   DESIGNATED 30
   LABEL ~B1StylePortraits_EnhancedBG1~
   
-  COPY ~%MOD_FOLDER%/portraits/playable_npcs_bg1~ ~override~
+  COPY ~%MOD_FOLDER%/portraits/party_bg1~ ~override~
 
 BEGIN @14 // New BG2 NPC Portraits
   REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10
   DESIGNATED 40
   LABEL ~B1StylePortraits_EnhancedBG2~
 
-  COPY ~%MOD_FOLDER%/portraits/playable_npcs_bg2~ ~override~
+  COPY ~%MOD_FOLDER%/portraits/party_bg2~ ~override~
 
   INCLUDE ~%MOD_FOLDER%/lib/edwina.tph~
   INCLUDE ~%MOD_FOLDER%/lib/npc_portrait_patches.tph~
