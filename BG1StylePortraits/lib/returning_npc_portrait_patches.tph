@@ -1,0 +1,104 @@
+CALL CHANGE_NPC_PORTRAIT
+  portrait = ~NAJANTI~
+  source_dir = ~party_returning~
+  cre_files = ~c#ajan08 c#ajatob 7xcre70~
+
+CALL CHANGE_NPC_PORTRAIT
+  portrait = ~NALORA~
+  source_dir = ~party_returning~
+  cre_files = ~alora09 alora25 7xcre69~
+
+CALL CHANGE_NPC_PORTRAIT
+  portrait = ~NBRANWE~
+  source_dir = ~party_returning~
+  cre_files = ~o#bran o#bran25 7xcre5~
+
+CALL CHANGE_NPC_PORTRAIT
+  portrait = ~NCORAN~
+  source_dir = ~party_returning~
+  cre_files = ~O#Coran O#Cor25 7xcre63~
+
+CALL CHANGE_NPC_PORTRAIT
+  portrait = ~NDYNAHE~
+  source_dir = ~party_returning~
+  cre_files = ~l#dyn l#dyn25~
+
+CALL CHANGE_NPC_PORTRAIT
+  portrait = ~NELDOTH~
+  source_dir = ~party_returning~
+  cre_files = ~l#2sdeld 7xcre6~
+
+CALL CHANGE_NPC_PORTRAIT
+  portrait = ~NFALDOR~
+  source_dir = ~party_returning~
+  cre_files = ~l#fal l#fal25 7xcre72 CEFALD01 CEFALD02 CEFALD04 CEFALDOR~
+
+CALL CHANGE_NPC_PORTRAIT
+  portrait = ~NGARRIC~
+  source_dir = ~party_returning~
+  cre_files = ~7xcre3~
+
+CALL CHANGE_NPC_PORTRAIT
+  portrait = ~NKHALID~
+  source_dir = ~party_returning~
+  cre_files = ~l#kha l#kha25~
+
+CALL CHANGE_NPC_PORTRAIT
+  portrait = ~NKAGAIN~
+  source_dir = ~party_returning~
+  cre_files = ~7xcre71~
+
+CALL CHANGE_NPC_PORTRAIT
+  portrait = ~NKIVAN~
+  source_dir = ~party_returning~
+  cre_files = ~p#kivan 7xcre73~
+
+CALL CHANGE_NPC_PORTRAIT
+  portrait = ~NMONTAR~
+  source_dir = ~party_returning~
+  cre_files = ~l#mon l#mon25 7xcre74~
+
+CALL CHANGE_NPC_PORTRAIT
+  portrait = ~NQUAYLE~
+  source_dir = ~party_returning~
+  cre_files = ~quayle 1xqu25 7xcre78~
+
+CALL CHANGE_NPC_PORTRAIT
+  portrait = ~NSAFANA~
+  source_dir = ~party_returning~
+  cre_files = ~7xcre62~
+
+CALL CHANGE_NPC_PORTRAIT
+  portrait = ~NSHARTE~
+  source_dir = ~party_returning~
+  cre_files = ~l#sht l#sht25 7xcre1~
+
+CALL CHANGE_NPC_PORTRAIT
+  portrait = ~NSKIE~
+  source_dir = ~party_returning~
+  cre_files = ~l#2sdski.cre l#2sd25.cre 7xcre4~
+
+CALL CHANGE_NPC_PORTRAIT
+  portrait = ~NTIAX~
+  source_dir = ~party_returning~
+  cre_files = ~O#Tiax O#Tiax25 7xcre77~
+
+CALL CHANGE_NPC_PORTRAIT
+  portrait = ~NXAN~
+  source_dir = ~party_returning~
+  cre_files = ~O#Xan09.cre O#Xan25.cre 7xcre76~
+
+CALL CHANGE_NPC_PORTRAIT
+  portrait = ~NXZAR~
+  source_dir = ~party_returning~
+  cre_files = ~l#xza.cre l#xza25.cre 7xcre75~
+
+CALL CHANGE_NPC_PORTRAIT
+  portrait = ~XZAR~
+  source_dir = ~party_bg1~
+  cre_files = ~XZAR.cre~
+
+CALL CHANGE_NPC_PORTRAIT
+  portrait = ~NYESLIC~
+  source_dir = ~party_returning~
+  cre_files = ~lk#yesl lk#yes25 7xcre2~

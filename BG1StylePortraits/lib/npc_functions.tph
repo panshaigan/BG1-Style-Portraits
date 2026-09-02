@@ -58,6 +58,30 @@ BEGIN
   BUT_ONLY
 END
 
+DEFINE_ACTION_FUNCTION change_npc_portrait
+  STR_VAR
+    portrait = ""
+    source_dir = ""
+    cre_files = ""
+  BEGIN
+    SPRINT portrait_lower ~%portrait%~
+    TO_LOWER portrait_lower
+
+    ACTION_IF ~%source_dir%~ != ~ ~ BEGIN
+      COPY ~%MOD_FOLDER%/portraits/%source_dir%/%portrait%L.bmp~ ~override/%portrait%L.bmp~
+      COPY ~%MOD_FOLDER%/portraits/%source_dir%/%portrait%M.bmp~ ~override/%portrait%M.bmp~
+      COPY ~%MOD_FOLDER%/portraits/%source_dir%/%portrait_lower%r.bmp~ ~override/%portrait_lower%r.bmp~
+    END
+
+    ACTION_PHP_EACH cre_files AS cre_file BEGIN
+      ACTION_IF FILE_EXISTS_IN_GAME ~%cre_file%.cre~ BEGIN
+        COPY_EXISTING ~%cre_file%.cre~ ~override~
+          WRITE_ASCII 0x34 ~%portrait%M~ #8
+          WRITE_ASCII 0x3c ~%portrait%L~ #8
+          BUT_ONLY_IF_IT_CHANGES
+      END
+    END
+  END
 
 // Removes a line of text from the current file
 DEFINE_PATCH_FUNCTION REMOVE_TEXT_LINE
