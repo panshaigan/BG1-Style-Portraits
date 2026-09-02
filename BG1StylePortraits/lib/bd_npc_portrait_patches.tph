@@ -113,3 +113,5 @@ ACTION_IF (GAME_IS ~bg2ee~) BEGIN
     COPY ~%MOD_FOLDER%/portraits/party_bg2/nrasaadr.bmp~ ~override/rasaadr.bmp~
   END
 END
+
+
