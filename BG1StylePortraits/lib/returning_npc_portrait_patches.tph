@@ -1,3 +1,6 @@
+INCLUDE ~%MOD_FOLDER%/lib/npc_functions.tph~
+
+// BG1 NPCs in SoA and single-npc mods
 CALL CHANGE_NPC_PORTRAIT
   portrait = ~NAJANTI~
   source_dir = ~party_returning~
@@ -47,11 +50,15 @@ CALL CHANGE_NPC_PORTRAIT
   portrait = ~NKAGAIN~
   source_dir = ~party_returning~
   cre_files = ~7xcre71~
+  continous_npc_script = ~MOKAGAIN~
+  continous_npc_name = ~Kagain~
 
 CALL CHANGE_NPC_PORTRAIT
   portrait = ~NKIVAN~
   source_dir = ~party_returning~
   cre_files = ~p#kivan 7xcre73~
+  continous_npc_script = ~MOKIVAN~
+  continous_npc_name = ~Kivan~
 
 CALL CHANGE_NPC_PORTRAIT
   portrait = ~NMONTAR~
@@ -87,6 +94,8 @@ CALL CHANGE_NPC_PORTRAIT
   portrait = ~NXAN~
   source_dir = ~party_returning~
   cre_files = ~O#Xan09.cre O#Xan25.cre 7xcre76~
+  continous_npc_script = ~MOXAN~
+  continous_npc_name = ~Xan~
 
 CALL CHANGE_NPC_PORTRAIT
   portrait = ~NXZAR~
@@ -102,3 +111,10 @@ CALL CHANGE_NPC_PORTRAIT
   portrait = ~NYESLIC~
   source_dir = ~party_returning~
   cre_files = ~lk#yesl lk#yes25 7xcre2~
+  continous_npc_script = ~MOYESLIC~
+  continous_npc_name = ~Yeslick~
+
+  CALL CHANGE_NPC_PORTRAIT
+    portrait = ~NYOSHIM~
+    source_dir = ~party_returning~
+    cre_files = ~XZAR.cre~
