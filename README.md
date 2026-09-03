@@ -56,7 +56,7 @@ However, a few more controversial decisions were made:
 - Viconia was given some luminescent war paint.
 - Xan's face was dehumanized.
 
-[![BG 1 Portraits](docs/pack_bg1_thumbnail.webp)](docs/pack_bg1.webp)
+[![BG 1 Portraits](docs/party_bg1_L_thumb.webp)](docs/party_bg1_L.webp)
 
 See the [BG1 portrait gallery](docs/gallery_bg1.md) for individual portraits.
 
@@ -77,7 +77,7 @@ Some of them are a bit modified, others are modified a lot. Currently only a spe
 - Edwin, without the hood, with Red Wizards tattoos on his head instead.
 - Hmm, actually, I personally see no other controversies.
 
-[![BG 2 Portraits](docs/pack_bg2_thumbnail.webp)](docs/pack_bg2.webp)
+[![BG 2 Portraits](docs/party_bg2_L_thumb.webp)](docs/party_bg2_L.webp)
 
 See the [BG2 portrait gallery](docs/gallery_bg2.md) for individual portraits.
 
