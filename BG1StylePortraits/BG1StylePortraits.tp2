@@ -43,6 +43,7 @@ BEGIN @14 // New BG2 NPC Portraits
   LABEL ~B1StylePortraits_EnhancedBG2~
 
   COPY ~%MOD_FOLDER%/portraits/party_bg2~ ~override~
+  COPY ~%MOD_FOLDER%/portraits/party_bg2_special~ ~override~
 
   INCLUDE ~%MOD_FOLDER%/lib/edwina.tph~
   INCLUDE ~%MOD_FOLDER%/lib/bd_npc_portrait_patches.tph~

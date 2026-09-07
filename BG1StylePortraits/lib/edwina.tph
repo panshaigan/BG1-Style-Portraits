@@ -21,10 +21,10 @@ COPY_EXISTING ~spin662.spl~ ~override~ // return to edwin
 		END
 		PATCH_IF ("%SOURCE_RES%" STRING_COMPARE_CASE "spin662" = 0) BEGIN
 			WRITE_ASCII ("%fx_off%" + 0x14 + (0x30 * "%abil_fx_idx%")) ~nedwinm~ // portrait resource
-			WRITE_ASCII ("%fx_off%" + 0x44 + (0x30 * "%abil_fx_idx%")) ~nedwins~ // portrait resource
+			WRITE_ASCII ("%fx_off%" + 0x1c + (0x30 * "%abil_fx_idx%")) ~nedwinl~ // portrait resource
 		END ELSE BEGIN
-			WRITE_ASCII ("%fx_off%" + 0x14 + (0x30 * "%abil_fx_idx%")) ~EDWINAL~ // portrait resource
-			WRITE_ASCII ("%fx_off%" + 0x44 + (0x30 * "%abil_fx_idx%")) ~EDWINAS~ // portrait resource
+			WRITE_ASCII ("%fx_off%" + 0x14 + (0x30 * "%abil_fx_idx%")) ~EDWINAM~ // portrait resource
+			WRITE_ASCII ("%fx_off%" + 0x1c + (0x30 * "%abil_fx_idx%")) ~EDWINAL~ // portrait resource
 		END
 		SET "delta" = ("%delta%" + 2)
 		WRITE_SHORT ("%abil_off%" + 0x1e + (0x28 * "%index%")) ("%abil_fx_num%" + 2)
