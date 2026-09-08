@@ -60,7 +60,7 @@ Click a thumbnail to view the full-size portrait.
 | M | L | r | M | L | r |
 | [![Xzar - M](portraits/party_returning/thumbs/NXZARM.webp)](portraits/party_returning/NXZARM.webp) | [![Xzar - L](portraits/party_returning/thumbs/NXZARL.webp)](portraits/party_returning/NXZARL.webp) | [![Xzar - r](portraits/party_returning/thumbs/nxzarr.webp)](portraits/party_returning/nxzarr.webp) | [![Yeslick - M](portraits/party_returning/thumbs/NYESLICM.webp)](portraits/party_returning/NYESLICM.webp) | [![Yeslick - L](portraits/party_returning/thumbs/NYESLICL.webp)](portraits/party_returning/NYESLICL.webp) | [![Yeslick - r](portraits/party_returning/thumbs/nyeslicr.webp)](portraits/party_returning/nyeslicr.webp) |
 
-| | **Yoshimo** | |
-|:---:|:---:|:---:|
-| M | L | r |
+| |                                             **Yoshimo (ToB)**                                             | |
+|:---:|:---------------------------------------------------------------------------------------------------------:|:---:|
+| M |                                                     L                                                     | r |
 | [![Yoshimo - M](portraits/party_returning/thumbs/NYOSHIMM.webp)](portraits/party_returning/NYOSHIMM.webp) | [![Yoshimo - L](portraits/party_returning/thumbs/NYOSHIML.webp)](portraits/party_returning/NYOSHIML.webp) | [![Yoshimo - r](portraits/party_returning/thumbs/nyoshimr.webp)](portraits/party_returning/nyoshimr.webp) |

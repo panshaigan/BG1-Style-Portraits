@@ -35,10 +35,10 @@ Click a thumbnail to view the full-size portrait.
 | M |                                            L                                            | r | M | L | r |
 | [![Hexxat (EE) - M](portraits/party_bg2/thumbs/OHHEXXM.webp)](portraits/party_bg2/OHHEXXM.webp) | [![Hexxat (EE) - L](portraits/party_bg2/thumbs/OHHEXXL.webp)](portraits/party_bg2/OHHEXXL.webp) | [![Hexxat (EE) - r](portraits/party_bg2/thumbs/ohhexxr.webp)](portraits/party_bg2/ohhexxr.webp) | [![Imoen - M](portraits/party_bg2/thumbs/NIMOENM.webp)](portraits/party_bg2/NIMOENM.webp) | [![Imoen - L](portraits/party_bg2/thumbs/NIMOENL.webp)](portraits/party_bg2/NIMOENL.webp) | [![Imoen - r](portraits/party_bg2/thumbs/nimoenr.webp)](portraits/party_bg2/nimoenr.webp) |
 
-| | **Jaheira** | | | **Jan** | |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| M | L | r | M | L | r |
-| [![Jaheira - M](portraits/party_bg2/thumbs/NJAHEIRM.webp)](portraits/party_bg2/NJAHEIRM.webp) | [![Jaheira - L](portraits/party_bg2/thumbs/NJAHEIRL.webp)](portraits/party_bg2/NJAHEIRL.webp) | [![Jaheira - r](portraits/party_bg2/thumbs/njaheirr.webp)](portraits/party_bg2/njaheirr.webp) | [![Jan - M](portraits/party_bg2/thumbs/NJANLM.webp)](portraits/party_bg2/NJANLM.webp) | [![Jan - L](portraits/party_bg2/thumbs/NJANLL.webp)](portraits/party_bg2/NJANLL.webp) | [![Jan - r](portraits/party_bg2/thumbs/njanr.webp)](portraits/party_bg2/njanr.webp) |
+| | **Jaheira** | |                                                                                     |                                       **Jan**                                       | |
+|:---:|:---:|:---:|:-----------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------:|:---:|
+| M | L | r |                                          M                                          |                                          L                                          | r |
+| [![Jaheira - M](portraits/party_bg2/thumbs/NJAHEIRM.webp)](portraits/party_bg2/NJAHEIRM.webp) | [![Jaheira - L](portraits/party_bg2/thumbs/NJAHEIRL.webp)](portraits/party_bg2/NJAHEIRL.webp) | [![Jaheira - r](portraits/party_bg2/thumbs/njaheirr.webp)](portraits/party_bg2/njaheirr.webp) | [![Jan - M](portraits/party_bg2/thumbs/NJANM.webp)](portraits/party_bg2/NJANM.webp) | [![Jan - L](portraits/party_bg2/thumbs/NJANL.webp)](portraits/party_bg2/NJANL.webp) | [![Jan - r](portraits/party_bg2/thumbs/njanr.webp)](portraits/party_bg2/njanr.webp) |
 
 | | **Keldorn** | | | **Korgan** | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
@@ -65,7 +65,7 @@ Click a thumbnail to view the full-size portrait.
 | M | L | r | M | L | r |
 | [![Viconia - M](portraits/party_bg2/thumbs/NVICONM.webp)](portraits/party_bg2/NVICONM.webp) | [![Viconia - L](portraits/party_bg2/thumbs/NVICONL.webp)](portraits/party_bg2/NVICONL.webp) | [![Viconia - r](portraits/party_bg2/thumbs/nviconr.webp)](portraits/party_bg2/nviconr.webp) | [![Valygar - M](portraits/party_bg2/thumbs/NVALYGAM.webp)](portraits/party_bg2/NVALYGAM.webp) | [![Valygar - L](portraits/party_bg2/thumbs/NVALYGAL.webp)](portraits/party_bg2/NVALYGAL.webp) | [![Valygar - r](portraits/party_bg2/thumbs/nvalygar.webp)](portraits/party_bg2/nvalygar.webp) |
 
-| | **Wilson** | | | **Yoshimo** | |
+| | **Yoshimo** | | | **Wilson** | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | M | L | r | M | L | r |
-| [![Wilson - M](portraits/party_bg2/thumbs/WILSONM.webp)](portraits/party_bg2/WILSONM.webp) | [![Wilson - L](portraits/party_bg2/thumbs/WILSONL.webp)](portraits/party_bg2/WILSONL.webp) | [![Wilson - r](portraits/party_bg2/thumbs/wilsonr.webp)](portraits/party_bg2/wilsonr.webp) | [![Yoshimo - M](portraits/party_bg2/thumbs/NYOSHIMM.webp)](portraits/party_bg2/NYOSHIMM.webp) | [![Yoshimo - L](portraits/party_bg2/thumbs/NYOSHIML.webp)](portraits/party_bg2/NYOSHIML.webp) | [![Yoshimo - r](portraits/party_bg2/thumbs/nyoshimr.webp)](portraits/party_bg2/nyoshimr.webp) |
+| [![Yoshimo - M](portraits/party_bg2/thumbs/NYOSHIMM.webp)](portraits/party_bg2/NYOSHIMM.webp) | [![Yoshimo - L](portraits/party_bg2/thumbs/NYOSHIML.webp)](portraits/party_bg2/NYOSHIML.webp) | [![Yoshimo - r](portraits/party_bg2/thumbs/nyoshimr.webp)](portraits/party_bg2/nyoshimr.webp) | [![Wilson - M](portraits/party_bg2/thumbs/WILSONM.webp)](portraits/party_bg2/WILSONM.webp) | [![Wilson - L](portraits/party_bg2/thumbs/WILSONL.webp)](portraits/party_bg2/WILSONL.webp) | [![Wilson - r](portraits/party_bg2/thumbs/wilsonr.webp)](portraits/party_bg2/wilsonr.webp)|
