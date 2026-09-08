@@ -7,41 +7,51 @@ LANGUAGE ~English~
          ~BG1StylePortraits/tra/english/setup.tra~
 
 
-BEGIN @11 // Make the portraits already assigned to NPC (like Jaheira, Minsc) unavailable for the player to choose as <CHARNAME> portrait
+//
+// --- PC Portraits ---
+//
+BEGIN @1001 // Isandir's Portrait Pack
   REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) @1
   REQUIRE_PREDICATE (
     (RESOURCE_CONTAINS ~UI.MENU~ ~rgGetGameEnginePortraits~)
     OR (RESOURCE_CONTAINS ~BGEE.LUA~ ~portraits~)
   ) @2
-  DESIGNATED 10
-  LABEL ~B1StylePortraits_Clear_PC_Portraits~
-
-  INCLUDE ~%MOD_FOLDER%/lib/detect_ui.tph~
-  INCLUDE ~%MOD_FOLDER%/lib/clear_pc_portraits.tph~
-
-BEGIN @12 // Extended Isandir's Portrait Pack
-  REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) @1
-  REQUIRE_PREDICATE (
-    (RESOURCE_CONTAINS ~UI.MENU~ ~rgGetGameEnginePortraits~)
-    OR (RESOURCE_CONTAINS ~BGEE.LUA~ ~portraits~)
-  ) @2
-  DESIGNATED 20
-  LABEL ~B1StylePortraits_Isandir~
+  GROUP @1000 // PC Portraits
+  DESIGNATED 1001
+  LABEL ~sha_BG1StylePortraits_Isandir~
 
   INCLUDE ~%MOD_FOLDER%/lib/detect_ui.tph~
   INCLUDE ~%MOD_FOLDER%/lib/isandir.tph~
 
-BEGIN @13 // Enhanced BG1 NPC Portraits
-  REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet~ @10
-  DESIGNATED 30
-  LABEL ~B1StylePortraits_EnhancedBG1~
+BEGIN @1901 // Make the portraits already assigned to NPC (like Jaheira, Minsc) unavailable for the player to choose as <CHARNAME> portrait
+  REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) @1
+  REQUIRE_PREDICATE (
+    (RESOURCE_CONTAINS ~UI.MENU~ ~rgGetGameEnginePortraits~)
+    OR (RESOURCE_CONTAINS ~BGEE.LUA~ ~portraits~)
+  ) @2
+  GROUP @1000 // PC Portraits
+  DESIGNATED 1901
+  LABEL ~sha_BG1StylePortraits_Clear_PC_Portraits~
+
+  INCLUDE ~%MOD_FOLDER%/lib/detect_ui.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/clear_pc_portraits.tph~
+
+//
+// --- NPC Portraits ---
+//
+BEGIN @2001 // Enhanced BG1 NPC Portraits
+  REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet~ @1
+  GROUP @2000 // Party NPC Portraits
+  DESIGNATED 2001
+  LABEL ~sha_BG1StylePortraits_EnhancedBG1~
   
   COPY ~%MOD_FOLDER%/portraits/party_bg1~ ~override~
 
-BEGIN @14 // New BG2 NPC Portraits
-  REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10
-  DESIGNATED 40
-  LABEL ~B1StylePortraits_EnhancedBG2~
+BEGIN @2101 // New BG2 NPC Portraits
+  REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @1
+  GROUP @2000 // Party NPC Portraits
+  DESIGNATED 2101
+  LABEL ~sha_BG1StylePortraits_EnhancedBG2~
 
   COPY ~%MOD_FOLDER%/portraits/party_bg2~ ~override~
   COPY ~%MOD_FOLDER%/portraits/party_bg2_special~ ~override~
@@ -49,11 +59,11 @@ BEGIN @14 // New BG2 NPC Portraits
   INCLUDE ~%MOD_FOLDER%/lib/edwina.tph~
   INCLUDE ~%MOD_FOLDER%/lib/bd_npc_portrait_patches.tph~
 
-  BEGIN @15 // Returning NPC Portraits
-    REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10
-    DESIGNATED 50
-    LABEL ~B1StylePortraits_ReturningBG2~
+BEGIN @2201 // Mods: Returning NPC Portraits
+  REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @1
+  GROUP @2000 // Party NPC Portraits
+  DESIGNATED 2201
+  LABEL ~sha_BG1StylePortraits_ReturningBG2~
 
-    COPY ~%MOD_FOLDER%/portraits/party_returning~ ~override~
-
-    INCLUDE ~%MOD_FOLDER%/lib/returning_npc_portrait_patches.tph~
+  COPY ~%MOD_FOLDER%/portraits/party_returning~ ~override~
+  INCLUDE ~%MOD_FOLDER%/lib/returning_npc_portrait_patches.tph~

@@ -1,8 +1,12 @@
 //Setup
 @1 = ~Game not supported~
 @2 = ~UI not supported~
-@11 = ~Make NPC portraits unavailable for PC selection ~
-@12 = ~Add Extended Isandir's Portrait Pack~
-@13 = ~Enhanced BG1 NPC Portraits~
-@14 = ~New BG2 NPC Portraits~
-@15 = ~Returning NPC Portraits~
+
+@1000 = ~PC Portraits~
+@1001 = ~Isandir's Portrait Pack~
+@1901 = ~Make NPC portraits unavailable for PC selection~
+
+@2000 = ~Party NPC Portraits~
+@2001 = ~Enhanced BG1 NPC Portraits~
+@2101 = ~New BG2 NPC Portraits~
+@2201 = ~Mods: Returning NPC Portraits~

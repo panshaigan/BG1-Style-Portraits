@@ -13,13 +13,13 @@
 
 ## Overview
 
-This WeiDU mod aims to improve the quality and consistency of party NPC portraits, especially in EET. Currently it offers BG1/SoD and BG2 NPC portraits, with components for NPC mods planned for future releases. The last milestone would be the custom PC portraits.
+This WeiDU mod aims to improve the quality and consistency of party portraits, especially in EET. The target for 1.0.0 is to cover BG1/SoD, BG2, mods, and PC Portraits. After that, it's possible to expand it for some main non-party NPCs.
 
 The mod supports the vanilla EE UI, LeUI, and Infinity UI++.
 
 ## Installation order and mod compatibility
 
-This is primarily a portrait mod and should be installed after content mods that install new NPCs or quests.
+This is a portrait mod and should be installed after content mods that install new NPCs or quests. I suggest to install it as the last mod to make it possible to easy reinstall it on new versions release.
 
 There are no compatibility issues known with other mods.
 
@@ -29,23 +29,23 @@ There are no compatibility issues known with other mods.
 
 ## Components
 
-### Make NPC portraits unavailable for PC selection *(BG:EE, BG2:EE, and EET)*
-
-This component removes portraits already assigned to NPCs from the `<CHARNAME>` portrait list, so party members keep their unique portraits.
-
-### Add Extended Isandir's Portrait Pack *(BG:EE, BG2:EE, and EET)*
-
-This component adds well-known custom portraits selectable during character creation
-
-### Enhanced BG1 NPC Portraits *(BG:EE, BG2:EE, and EET)*
-
-This component replaces portraits for 36 recruitable NPCs with enhanced BG1-style art.
-
-Each NPC portrait uses three size variants:
+Each portrait uses three size variants:
 
 - **M** - in-game (zoomed in)
 - **L** - character record/inventory (base portrait)
 - **r** - additional portrait at the Infinity UI inventory screen (zoomed out)
+
+### Player Character: Add Extended Isandir's Portrait Pack *(BG:EE, BG2:EE, and EET)*
+
+This component adds well-known custom portraits selectable during character creation
+
+### Player Character: Make NPC portraits unavailable for PC selection *(BG:EE, BG2:EE, and EET)*
+
+This component removes portraits already assigned to NPCs from the `<CHARNAME>` portrait list, so party members keep their unique portraits.
+
+### Party NPC: Enhanced BG1 NPC Portraits *(BG:EE, BG2:EE, and EET)*
+
+This component replaces portraits for 36 recruitable NPCs with enhanced BG1-style art.
 
 The majority of the portraits are simply upscaled and enhanced versions of the originals (with added details and lore-accurate fixes, such as removing the pointy ears from the halfling portraits or giving Viconia white hair).
 However, a few more controversial decisions were made:
@@ -53,22 +53,15 @@ However, a few more controversial decisions were made:
 - Faldorn no longer looks like a vampiric Meryl Streep.
 - Imoen received a more extensive rework than the others, as I always felt her original portrait was rushed and somewhat disappointing.
 - Jaheira... well, this one may be the most controversial. As we know, there is no consistency between her appearance in BG1 and BG2 (and the BG2 version was, frankly, rather unfortunate), so there is no true canon look. For that reason I decided to use Wombat’s Jaheira face and keep it consistent with the upcoming BG2 portraits component.
-- Viconia was given some luminescent war paint.
 - Xan's face was dehumanized.
 
 [![BG 1 Portraits](docs/party_bg1_L_thumb.webp)](docs/party_bg1_L.webp)
 
 See the [BG1 portrait gallery](docs/gallery_bg1.md) for individual portraits.
 
-### New BG2 NPC Portraits *(BG2:EE and EET)*
+### Party NPC: New BG2 NPC Portraits *(BG2:EE and EET)*
 
-This component replaces portraits for recruitable BG2 NPCs with enhanced BG1-style art. 
-
-Each NPC portrait uses three size variants:
-
-- **M** - in-game (zoomed in)
-- **L** - character record/inventory (base portrait)
-- **r** - additional portrait at the Infinity UI inventory screen (zoomed out)
+This component replaces portraits for recruitable BG2 NPCs with enhanced BG1-style art.
 
 The majority of the portraits are based on
 Wombat's [BG1 Style Portrait Remakes](https://www.nexusmods.com/baldursgate2ee/mods/139?tab=files) which, BTW was the main inspiration for creating this mod. 
@@ -80,6 +73,15 @@ Some of them are a bit modified, others are modified a lot. Currently only a spe
 [![BG 2 Portraits](docs/party_bg2_L_thumb.webp)](docs/party_bg2_L.webp)
 
 See the [BG2 portrait gallery](docs/gallery_bg2.md) for individual portraits.
+
+### Party NPC: Returning NPC Portraits *(BG2:EE and EET)*
+
+This component replaces portraits for modded returning BG1 NPCs in BG2 (special guest: ToB Yoshimo from Yoshimo's Remorse) with enhanced BG1-style art.
+It affects whatever NPC version you installed before: standalone mods, BG1 NPCs for SoA&ToB, Continous NPCs (although the last one has not been tested yet). 
+
+[![Returning Portraits](docs/party_returning_L_thumb.webp)](docs/party_returning_L.webp)
+
+See the [Returning portrait gallery](docs/gallery_returning.md) for individual portraits.
 
 ## Credits/thanks
 
