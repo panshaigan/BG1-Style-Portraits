@@ -1,0 +1,7 @@
+IF
+  Global("%global_var%","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ApplySpellRES("%continuous_portrait_spell%",Myself)
+    SetGlobal("%global_var%","GLOBAL",1)
+END

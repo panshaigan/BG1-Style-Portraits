@@ -62,43 +62,52 @@ DEFINE_ACTION_FUNCTION CHANGE_NPC_PORTRAIT
   STR_VAR
     portrait = ""
     source_dir = ""
-    cre_files = ""
+    cre_file_1 = ""
+    cre_file_2 = ""
+    cre_file_3 = ""
+    cre_file_4 = ""
+    cre_file_5 = ""
+    cre_file_6 = ""
+    cre_file_7 = ""
     continous_npc_script = ""
     continous_npc_name = ""
   BEGIN
-    SPRINT portrait_lower ~%portrait%~
-    TO_LOWER portrait_lower
+    OUTER_TEXT_SPRINT portrait_lower ~%portrait%~
+    ACTION_TO_LOWER portrait_lower
 
-    ACTION_IF ~%source_dir%~ != ~ ~ BEGIN
+    ACTION_IF (STRING_LENGTH ~%source_dir%~ > 0) BEGIN
       COPY ~%MOD_FOLDER%/portraits/%source_dir%/%portrait%L.bmp~ ~override/%portrait%L.bmp~
       COPY ~%MOD_FOLDER%/portraits/%source_dir%/%portrait%M.bmp~ ~override/%portrait%M.bmp~
       COPY ~%MOD_FOLDER%/portraits/%source_dir%/%portrait_lower%r.bmp~ ~override/%portrait_lower%r.bmp~
     END
 
-    ACTION_PHP_EACH cre_files AS cre_file BEGIN
-      ACTION_IF FILE_EXISTS_IN_GAME ~%cre_file%.cre~ BEGIN
-        COPY_EXISTING ~%cre_file%.cre~ ~override~
-          WRITE_ASCII 0x34 ~%portrait%M~ #8
-          WRITE_ASCII 0x3c ~%portrait%L~ #8
+    ACTION_FOR_EACH cre_file IN ~%cre_file_1%~ ~%cre_file_2%~ ~%cre_file_3%~ ~%cre_file_4%~ ~%cre_file_5%~ ~%cre_file_6%~ ~%cre_file_7%~ BEGIN
+      ACTION_IF (STRING_LENGTH ~%cre_file%~ > 0) AND FILE_EXISTS_IN_GAME ~%cre_file%~ BEGIN
+        COPY_EXISTING ~%cre_file%~ ~override~
+          WRITE_ASCIIE 0x34 ~%portrait%M~ #8
+          WRITE_ASCIIE 0x3c ~%portrait%L~ #8
           BUT_ONLY_IF_IT_CHANGES
       END
     END
 
-    ACTION_IF ~%continous_npc_script%~ != ~ ~ BEGIN
-      SPRINT npc_name_lower ~%continous_npc_name%~
-      TO_LOWER npc_name_lower
-      SPRINT global_var ~bg2_%npc_name_lower%_portrait~
+    ACTION_IF (STRING_LENGTH ~%continous_npc_script%~ > 0) BEGIN
+      OUTER_TEXT_SPRINT npc_name_lower ~%continous_npc_name%~
+      ACTION_TO_LOWER npc_name_lower
+      OUTER_TEXT_SPRINT global_var ~bg2_%npc_name_lower%_portrait~
+      OUTER_TEXT_SPRINT continuous_portrait_spell ~%portrait%P~
 
       ACTION_IF FILE_EXISTS_IN_GAME ~%continous_npc_script%.BCS~ BEGIN
-        EXTEND_TOP ~%continous_npc_script%.BCS~ BEGIN
-          IF
-            Global("%global_var%","GLOBAL",0)
-          THEN
-            RESPONSE #100
-              SetPortrait("%continous_npc_name%", "%portrait%M", "%portrait%L")
-              SetGlobal("%global_var%","GLOBAL",1)
+        COPY ~%MOD_FOLDER%/spells/a7_pxxx.spl~ ~override/%continuous_portrait_spell%.spl~
+          LPF ALTER_SPELL_EFFECT_RESREF
+            INT_VAR match_opcode = 107 parameter2 = 0
+            STR_VAR match_resource = ~A7PORTM~ resource = EVAL ~%portrait%M~
           END
-        END
+          LPF ALTER_SPELL_EFFECT_RESREF
+            INT_VAR match_opcode = 107 parameter2 = 1
+            STR_VAR match_resource = ~A7PORTL~ resource = EVAL ~%portrait%L~
+          END
+
+        EXTEND_TOP ~%continous_npc_script%.BCS~ ~%MOD_FOLDER%/scripts/continuous_npc_portrait.baf~ EVAL
       END
     END
   END

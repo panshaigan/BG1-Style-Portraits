@@ -1,120 +1,197 @@
 INCLUDE ~%MOD_FOLDER%/lib/npc_functions.tph~
 
-// BG1 NPCs in SoA and single-npc mods
-CALL CHANGE_NPC_PORTRAIT
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
   portrait = ~NAJANTI~
   source_dir = ~party_returning~
-  cre_files = ~c#ajan08 c#ajatob 7xcre70~
+  cre_file_1 = ~c#ajan08.cre~
+  cre_file_2 = ~c#ajatob.cre~
+  cre_file_3 = ~7xcre70.cre~
+END
 
-CALL CHANGE_NPC_PORTRAIT
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
   portrait = ~NALORA~
   source_dir = ~party_returning~
-  cre_files = ~alora09 alora25 7xcre69~
+  cre_file_1 = ~alora09.cre~
+  cre_file_2 = ~alora25.cre~
+  cre_file_3 = ~7xcre69.cre~
+END
 
-CALL CHANGE_NPC_PORTRAIT
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
   portrait = ~NBRANWE~
   source_dir = ~party_returning~
-  cre_files = ~o#bran o#bran25 7xcre5~
+  cre_file_1 = ~o#bran.cre~
+  cre_file_2 = ~o#bran25.cre~
+  cre_file_3 = ~7xcre5.cre~
+END
 
-CALL CHANGE_NPC_PORTRAIT
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
   portrait = ~NCORAN~
   source_dir = ~party_returning~
-  cre_files = ~O#Coran O#Cor25 7xcre63~
+  cre_file_1 = ~O#Coran.cre~
+  cre_file_2 = ~O#Cor25.cre~
+  cre_file_3 = ~7xcre63.cre~
+END
 
-CALL CHANGE_NPC_PORTRAIT
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
   portrait = ~NDYNAHE~
   source_dir = ~party_returning~
-  cre_files = ~l#dyn l#dyn25~
+  cre_file_1 = ~l#dyn.cre~
+  cre_file_2 = ~l#dyn25.cre~
+END
 
-CALL CHANGE_NPC_PORTRAIT
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
   portrait = ~NELDOTH~
   source_dir = ~party_returning~
-  cre_files = ~l#2sdeld 7xcre6~
+  cre_file_1 = ~l#2sdeld.cre~
+  cre_file_2 = ~7xcre6.cre~
+END
 
-CALL CHANGE_NPC_PORTRAIT
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
   portrait = ~NFALDOR~
   source_dir = ~party_returning~
-  cre_files = ~l#fal l#fal25 7xcre72 CEFALD01 CEFALD02 CEFALD04 CEFALDOR~
+  cre_file_1 = ~l#fal.cre~
+  cre_file_2 = ~l#fal25.cre~
+  cre_file_3 = ~7xcre72.cre~
+  cre_file_4 = ~CEFALD01.cre~
+  cre_file_5 = ~CEFALD02.cre~
+  cre_file_6 = ~CEFALD04.cre~
+  cre_file_7 = ~CEFALDOR.cre~
+END
 
-CALL CHANGE_NPC_PORTRAIT
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
   portrait = ~NGARRIC~
   source_dir = ~party_returning~
-  cre_files = ~7xcre3~
+  cre_file_1 = ~7xcre3.cre~
+END
 
-CALL CHANGE_NPC_PORTRAIT
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
   portrait = ~NKHALID~
   source_dir = ~party_returning~
-  cre_files = ~l#kha l#kha25~
+  cre_file_1 = ~l#kha.cre~
+  cre_file_2 = ~l#kha25.cre~
+END
 
-CALL CHANGE_NPC_PORTRAIT
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
   portrait = ~NKAGAIN~
   source_dir = ~party_returning~
-  cre_files = ~7xcre71~
+  cre_file_1 = ~7xcre71.cre~
   continous_npc_script = ~MOKAGAIN~
   continous_npc_name = ~Kagain~
+END
 
-CALL CHANGE_NPC_PORTRAIT
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
   portrait = ~NKIVAN~
   source_dir = ~party_returning~
-  cre_files = ~p#kivan 7xcre73~
+  cre_file_1 = ~p#kivan.cre~
+  cre_file_2 = ~7xcre73.cre~
   continous_npc_script = ~MOKIVAN~
   continous_npc_name = ~Kivan~
+END
 
-CALL CHANGE_NPC_PORTRAIT
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
   portrait = ~NMONTAR~
   source_dir = ~party_returning~
-  cre_files = ~l#mon l#mon25 7xcre74~
+  cre_file_1 = ~l#mon.cre~
+  cre_file_2 = ~l#mon25.cre~
+  cre_file_3 = ~7xcre74.cre~
+END
 
-CALL CHANGE_NPC_PORTRAIT
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
   portrait = ~NQUAYLE~
   source_dir = ~party_returning~
-  cre_files = ~quayle 1xqu25 7xcre78~
+  cre_file_1 = ~quayle.cre~
+  cre_file_2 = ~1xqu25.cre~
+  cre_file_3 = ~7xcre78.cre~
+END
 
-CALL CHANGE_NPC_PORTRAIT
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
   portrait = ~NSAFANA~
   source_dir = ~party_returning~
-  cre_files = ~7xcre62~
+  cre_file_1 = ~7xcre62.cre~
+END
 
-CALL CHANGE_NPC_PORTRAIT
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
   portrait = ~NSHARTE~
   source_dir = ~party_returning~
-  cre_files = ~l#sht l#sht25 7xcre1~
+  cre_file_1 = ~l#sht.cre~
+  cre_file_2 = ~l#sht25.cre~
+  cre_file_3 = ~7xcre1.cre~
+END
 
-CALL CHANGE_NPC_PORTRAIT
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
   portrait = ~NSKIE~
   source_dir = ~party_returning~
-  cre_files = ~l#2sdski.cre l#2sd25.cre 7xcre4~
+  cre_file_1 = ~l#2sdski.cre~
+  cre_file_2 = ~l#2sd25.cre~
+  cre_file_3 = ~7xcre4.cre~
+END
 
-CALL CHANGE_NPC_PORTRAIT
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
   portrait = ~NTIAX~
   source_dir = ~party_returning~
-  cre_files = ~O#Tiax O#Tiax25 7xcre77~
+  cre_file_1 = ~O#Tiax.cre~
+  cre_file_2 = ~O#Tiax25.cre~
+  cre_file_3 = ~7xcre77.cre~
+END
 
-CALL CHANGE_NPC_PORTRAIT
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
   portrait = ~NXAN~
   source_dir = ~party_returning~
-  cre_files = ~O#Xan09.cre O#Xan25.cre 7xcre76~
+  cre_file_1 = ~O#Xan09.cre~
+  cre_file_2 = ~O#Xan25.cre~
+  cre_file_3 = ~7xcre76.cre~
   continous_npc_script = ~MOXAN~
   continous_npc_name = ~Xan~
+END
 
-CALL CHANGE_NPC_PORTRAIT
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
   portrait = ~NXZAR~
   source_dir = ~party_returning~
-  cre_files = ~l#xza.cre l#xza25.cre 7xcre75~
+  cre_file_1 = ~l#xza.cre~
+  cre_file_2 = ~l#xza25.cre~
+  cre_file_3 = ~7xcre75.cre~
+END
 
-CALL CHANGE_NPC_PORTRAIT
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
   portrait = ~XZAR~
   source_dir = ~party_bg1~
-  cre_files = ~XZAR.cre~
+  cre_file_1 = ~XZAR.cre~
+END
 
-CALL CHANGE_NPC_PORTRAIT
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
   portrait = ~NYESLIC~
   source_dir = ~party_returning~
-  cre_files = ~lk#yesl lk#yes25 7xcre2~
+  cre_file_1 = ~lk#yesl.cre~
+  cre_file_2 = ~lk#yes25.cre~
+  cre_file_3 = ~7xcre2.cre~
   continous_npc_script = ~MOYESLIC~
   continous_npc_name = ~Yeslick~
+END
 
-  CALL CHANGE_NPC_PORTRAIT
-    portrait = ~NYOSHIM~
-    source_dir = ~party_returning~
-    cre_files = ~XZAR.cre~
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~NYOSHIM~
+  source_dir = ~party_returning~
+  cre_file_1 = ~XZAR.cre~
+END

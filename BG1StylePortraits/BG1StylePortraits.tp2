@@ -1,10 +1,11 @@
 BACKUP ~weidu_external/backup/BG1StylePortraits~
 AUTHOR ~shaigan~
-VERSION ~0.5.2~
+VERSION ~0.6.0~
 
 LANGUAGE ~English~
          ~english~
          ~BG1StylePortraits/tra/english/setup.tra~
+
 
 BEGIN @11 // Make the portraits already assigned to NPC (like Jaheira, Minsc) unavailable for the player to choose as <CHARNAME> portrait
   REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) @1
@@ -47,3 +48,12 @@ BEGIN @14 // New BG2 NPC Portraits
 
   INCLUDE ~%MOD_FOLDER%/lib/edwina.tph~
   INCLUDE ~%MOD_FOLDER%/lib/bd_npc_portrait_patches.tph~
+
+  BEGIN @15 // Returning NPC Portraits
+    REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @10
+    DESIGNATED 50
+    LABEL ~B1StylePortraits_ReturningBG2~
+
+    COPY ~%MOD_FOLDER%/portraits/party_returning~ ~override~
+
+    INCLUDE ~%MOD_FOLDER%/lib/returning_npc_portrait_patches.tph~
