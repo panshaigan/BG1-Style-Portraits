@@ -1,0 +1,239 @@
+INCLUDE ~%MOD_FOLDER%/lib/npc_functions.tph~
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNGAVIN~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~B!GAV08.cre~
+  cre_file_2 = ~B!GAV13.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNBREAG~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~ACBRE2.cre~
+  cre_file_2 = ~ACBRE2S.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNVERRS~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~L#2VERR.cre~
+  cre_file_2 = ~L#2VE25.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNADRIA~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~rh#adr.cre~
+  cre_file_2 = ~rh#adr25.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNAMBER~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~m#ambr10.cre~
+  cre_file_2 = ~m#ambr12.cre~
+  cre_file_3 = ~m#ambr14.cre~
+  cre_file_4 = ~m#ambr15.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNANGEL~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~adangel.cre~
+  cre_file_2 = ~adang25.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNAUREN~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~auren.cre~
+  cre_file_2 = ~auren1.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNDEHER~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~p#deh01.cre~
+  cre_file_2 = ~p#deher.cre~
+  cre_file_3 = ~p#dehdiv.cre~
+  cre_file_4 = ~p#dehenc.cre~
+  cre_file_5 = ~p#dehwma.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNDVARA~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~L#DVA.cre~
+  cre_file_2 = ~L#DVA25.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNEDDAR~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~L#2EDDRD.cre~
+  cre_file_2 = ~L#2ED25.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNELA~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~QI#Ela..cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNEMILY~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~X3EMI.cre~
+  cre_file_2 = ~X3EMI25.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNHELGA~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~X3HEL.cre~
+  cre_file_2 = ~X3HEL25.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNKALE~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~X3KAL.cre~
+  cre_file_2 = ~X3KAL25.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNRECOR~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~X3REB.cre~
+  cre_file_2 = ~X3REB25.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNVIENX~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~X3VIE.cre~
+  cre_file_2 = ~X3VIE25.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNFADE~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~e3fade2.cre~
+  cre_file_2 = ~e3fade13.cre~
+  cre_file_3 = ~e3fade25.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNGAHES~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~G1GAHE.cre~
+  cre_file_2 = ~G1GAHE25.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNFYALV~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~L#FYA.cre~
+  cre_file_2 = ~L#FYA25.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNFHAUG~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~L#FHA.cre~
+  cre_file_2 = ~L#FHA25.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNINDE~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~lk#nind.cre~
+  cre_file_2 = ~lk#ni25.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNISRA~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~rh#isr..cre~
+  cre_file_2 = ~rh#is25.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNKELSE~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~J#Klsy.cre~
+  cre_file_2 = ~J#Klsy25.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNKETO~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~keto10.cre~
+  cre_file_2 = ~keto12.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNMINYA~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~MINYAE.cre~
+  cre_file_2 = ~MIN25.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNPAINA~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~sppain.cre~
+  cre_file_2 = ~C0Pai25.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNSARAD~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~!saradas.cre~
+  cre_file_2 = ~!sartob.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNSIREN~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~c0sire2.cre~
+  cre_file_2 = ~c0sire25.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNSOLAU~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~C#SOlau1.cre~
+  cre_file_2 = ~C#Sola12.cre~
+  cre_file_3 = ~C#Soltob.cre~
+END
