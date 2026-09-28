@@ -1,0 +1,22 @@
+---
+description: Verified local WeiDU installation test procedure for WeiDU mods
+alwaysApply: true
+---
+
+# Component Installation Test
+
+When an installation test is requested:
+
+1. Resolve and verify these exact paths before writing:
+   - Source: the repo subfolder conatining the tp2 file. For example `./BG1StylePortraits`
+   - Game: The path will be provided by the user
+   - Destination: `<game>/BG1StylePortraits`
+   - Installer: `<game>/setup-BG1StylePortraits.exe`
+2. Copy the source folder contents into the destination without deleting unrelated game files. In PowerShell, use `Copy-Item -Path (Join-Path $src '*') -Destination $dst -Recurse -Force`. Do not combine a wildcard with `-LiteralPath`; it treats `*` literally and leaves stale test files in place.
+3. From the game directory, run `<game>\setup-{ModName}}.exe --noautoupdate --no-exit-pause --skip-at-view --language 0 --use-lang en_US --force-install {Component designated number}`.
+4. Read `SETUP-{MODNAME}.DEBUG` if installation fails; the console's final error may hide the earlier failing operation.
+5. After a successful clean installation, run the same installer command once more. Require both `SUCCESSFULLY REMOVED OLD` and `SUCCESSFULLY INSTALLED` to validate uninstall/reinstall parsing and backup behavior.
+6. Confirm component {COMPONENT DESIGNATED NUMBER} in `<game>\weidu.log`, then inspect affected resources rather than treating installer success as proof of correct output. For CRE portrait changes, read the eight-byte resrefs at `0x34` (small) and `0x3c` (large) for every available target relevant to the change.
+7. Leave the component installed unless the user requests cleanup.
+
+Treat the game installation as external mutable state. Request required permission elevation and keep all writes scoped to the destination mod folder and the documented installer operation.
