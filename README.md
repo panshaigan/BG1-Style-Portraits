@@ -83,14 +83,30 @@ It affects whatever NPC version you installed before: standalone mods, BG1 NPCs 
 
 See the [Returning portrait gallery](docs/gallery_returning.md) for individual portraits.
 
+### Mods: BG1 NPC Portraits *(BG:EE, BG2:EE, and EET)*
+
+This component replaces portraits for mod-added BG1 NPCs with enhanced BG1-style art.
+
+[![BG1 Mod Portraits](docs/party_bg1_mods_L_thumb.webp)](docs/party_bg1_mods_L.webp)
+
+See the [BG1 mod NPC portrait gallery](docs/gallery_bg1_mods.md) for individual portraits.
+
+### Mods: BG2 NPC Portraits *(BG2:EE and EET)*
+
+This component replaces portraits for mod-added BG2 NPCs with enhanced BG1-style art.
+
+[![BG1 Mod Portraits](docs/party_bg2_mods_L_thumb.webp)](docs/party_bg2_mods_L.webp)
+
+See the [BG2 mod NPC portrait gallery](docs/gallery_bg2_mods.md) for individual portraits.
+
 ## Credits/thanks
 
-- **Wombat** - main inspiration to BG1ize all the portraits and the original author of most of the BG2 portraits
+- **Wombat** - main inspiration to BG1ize all the portraits and the original author of most of the original BG2 cast portraits
 - **Vasculio** - base/ideas for BG1 portraits enhancements
 - **DosEquis** - base/ideas for BG1 portraits enhancements
 - **Isandir** - original PC portrait pack
 - **Argent77** - exact code for the EE BG2 NPC portrait replacements
 - **smeagolheart** - code for introducing Edwina portrait
-- **ALIEN, Argent77, Bubb, CamDawg, DavidW, GraionDilach, K4thos, jastey, Pecca** - without their effort there would be no sense in modding the 30 years old game.
+- **ALIEN, Argent77, Bubb, CamDawg, DavidW, GraionDilach, K4thos, jastey, Pecca and others** - without their effort there would be no sense in modding the 30 years old game.
 - **shaigan** - the mod author
 
