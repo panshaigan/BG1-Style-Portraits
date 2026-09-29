@@ -69,7 +69,7 @@ BEGIN @2201 // Mods: Returning NPC Portraits
   INCLUDE ~%MOD_FOLDER%/lib/returning_npc_portrait_patches.tph~
 
 BEGIN @2301 // Mods: BG1 NPC Portraits
-  REQUIRE_PREDICATE GAME_IS ~bg1ee eet~ @1
+  REQUIRE_PREDICATE GAME_IS ~bgee eet~ @1
   GROUP @2000 // Party NPC Portraits
   DESIGNATED 2301
   LABEL ~sha_BG1StylePortraits_BG1Mods~

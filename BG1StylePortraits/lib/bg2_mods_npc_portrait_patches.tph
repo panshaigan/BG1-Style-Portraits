@@ -10,14 +10,6 @@ END
 
 LAF CHANGE_NPC_PORTRAIT
 STR_VAR
-  portrait = ~SNBREAG~
-  source_dir = ~party_bg2_mods~
-  cre_file_1 = ~ACBRE2.cre~
-  cre_file_2 = ~ACBRE2S.cre~
-END
-
-LAF CHANGE_NPC_PORTRAIT
-STR_VAR
   portrait = ~SNVERRS~
   source_dir = ~party_bg2_mods~
   cre_file_1 = ~L#2VERR.cre~
@@ -237,3 +229,71 @@ STR_VAR
   cre_file_2 = ~C#Sola12.cre~
   cre_file_3 = ~C#Soltob.cre~
 END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNBRAGE~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~C#BRAGE2.cre~
+  cre_file_2 = ~C#BRAGE25.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNBREAG~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~ACBRE07.cre~
+  cre_file_2 = ~ACBRE25.cre~
+  cre_file_3 = ~ACBRE2.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SHUSAM~
+  source_dir = ~party_bg1_mods~
+  cre_file_1 = ~C#HUSAM1.cre~
+END
+
+ACTION_IF (GAME_IS ~eet~) BEGIN
+  // Brandock ---
+  OUTER_TEXT_SPRINT a7_portrait_change ~a7_pbrd~
+  COPY ~%MOD_FOLDER%/spells/a7_pxxx.spl~ ~override/%a7_portrait_change%.spl~
+    LPF ALTER_SPELL_EFFECT_RESREF
+      INT_VAR match_opcode = 107
+      STR_VAR match_resource = ~A7PORTM~ resource = ~SNBRANDM~
+    END
+    LPF ALTER_SPELL_EFFECT_RESREF
+      INT_VAR match_opcode = 107
+      STR_VAR match_resource = ~A7PORTL~ resource = ~SNBRANDL~
+    END
+
+  ACTION_FOR_EACH script IN ~c#brand2~ BEGIN
+    ACTION_IF (FILE_EXISTS_IN_GAME ~%script%.bcs~) BEGIN
+      EXTEND_TOP ~%script%.bcs~ ~%MOD_FOLDER%/scripts/portrait_change.baf~ EVAL
+    END
+  END
+
+  LAF UPDATE_EPILOG_PORTRAIT
+  STR_VAR
+    match_portrait = ~C#BRAND.*~
+    portrait = ~SNBREAGL~
+  END
+END
+
+ACTION_IF (GAME_IS ~bg2ee~) BEGIN
+  ACTION_IF (NOT GAME_IS ~eet~) BEGIN
+    COPY ~%MOD_FOLDER%/portraits/party_bg2/SNBRAGEL.bmp~ ~override/SNBRAGEL.bmp~
+    COPY ~%MOD_FOLDER%/portraits/party_bg2/SNBRAGEM.bmp~ ~override/SNBRAGEM.bmp~
+    COPY ~%MOD_FOLDER%/portraits/party_bg2/snbrager.bmp~ ~override/snbrager.bmp~
+
+    COPY ~%MOD_FOLDER%/portraits/party_bg2/SNBREAGL.bmp~ ~override/SNBREAGL.bmp~
+    COPY ~%MOD_FOLDER%/portraits/party_bg2/SNBREAGM.bmp~ ~override/SNBREAGM.bmp~
+    COPY ~%MOD_FOLDER%/portraits/party_bg2/snbreagr.bmp~ ~override/snbreagr.bmp~
+
+    COPY ~%MOD_FOLDER%/portraits/party_bg2/SNBREAGL.bmp~ ~override/NEERAL.bmp~
+    COPY ~%MOD_FOLDER%/portraits/party_bg2/SNBREAGM.bmp~ ~override/NEERAM.bmp~
+    COPY ~%MOD_FOLDER%/portraits/party_bg2/snbreagr.bmp~ ~override/neerar.bmp~
+  END
+END
+
+

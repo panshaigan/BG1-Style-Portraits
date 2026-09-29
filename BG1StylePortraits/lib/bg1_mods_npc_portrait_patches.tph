@@ -19,16 +19,15 @@ LAF CHANGE_NPC_PORTRAIT
 STR_VAR
   portrait = ~SBRAGE~
   source_dir = ~party_bg1_mods~
-  cre_file_1 = ~C#BRAGE.cre~
-  cre_file_2 = ~C#BRAGE0.cre~
+  cre_file_1 = ~C#BRAGE1.cre~
+  cre_file_2 = ~C#BRAGES.cre~
 END
 
 LAF CHANGE_NPC_PORTRAIT
 STR_VAR
   portrait = ~SBRANDO~
   source_dir = ~party_bg1_mods~
-  cre_file_1 = ~C#BRANDOCK.cre~
-  cre_file_2 = ~C#BRANDOCKS.cre~
+  cre_file_1 = ~c#bran01.cre~
 END
 
 LAF CHANGE_NPC_PORTRAIT
