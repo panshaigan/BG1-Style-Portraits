@@ -65,5 +65,22 @@ BEGIN @2201 // Mods: Returning NPC Portraits
   DESIGNATED 2201
   LABEL ~sha_BG1StylePortraits_ReturningBG2~
 
-  COPY ~%MOD_FOLDER%/portraits/party_returning~ ~override~
+  COPY ~%MOD_FOLDER%/portraits/party_returning_special~ ~override~
   INCLUDE ~%MOD_FOLDER%/lib/returning_npc_portrait_patches.tph~
+
+BEGIN @2301 // Mods: BG1 NPC Portraits
+  REQUIRE_PREDICATE GAME_IS ~bg1ee eet~ @1
+  GROUP @2000 // Party NPC Portraits
+  DESIGNATED 2301
+  LABEL ~sha_BG1StylePortraits_BG1Mods~
+
+  INCLUDE ~%MOD_FOLDER%/lib/bg1_mods_npc_portrait_patches.tph~
+
+BEGIN @2401 // Mods: BG2 NPC Portraits
+  REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @1
+  GROUP @2000 // Party NPC Portraits
+  DESIGNATED 2401
+  LABEL ~sha_BG1StylePortraits_BG2Mods~
+
+  COPY ~%MOD_FOLDER%/portraits/party_bg2_mods_special~ ~override~
+  INCLUDE ~%MOD_FOLDER%/lib/bg2_mods_npc_portrait_patches.tph~
