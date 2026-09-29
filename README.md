@@ -96,7 +96,7 @@ See the [BG1 mod NPC portrait gallery](docs/gallery_bg1_mods.md) for individual 
 
 This component replaces portraits for mod-added BG2 NPCs with enhanced BG1-style art.
 
-[![BG1 Mod Portraits](docs/party_bg2_mods_L_thumb.webp)](docs/party_bg2_mods_L.webp)
+[![BG2 Mod Portraits](docs/party_bg2_mods_L_thumb.webp)](docs/party_bg2_mods_L.webp)
 
 See the [BG2 mod NPC portrait gallery](docs/gallery_bg2_mods.md) for individual portraits.
 
