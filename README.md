@@ -62,11 +62,9 @@ See the [BG1 portrait gallery](docs/gallery_bg1.md) for individual portraits.
 
 ### Party NPC: New BG2 NPC Portraits *(BG2:EE and EET)*
 
-This component replaces portraits for recruitable BG2 NPCs with enhanced BG1-style art.
+This component replaces portraits for recruitable BG2 NPCs with enhanced BG1-style art. I will be adding more portraits in the future.
 
-The majority of the portraits are based on
-Wombat's [BG1 Style Portrait Remakes](https://www.nexusmods.com/baldursgate2ee/mods/139?tab=files) which, BTW was the main inspiration for creating this mod. 
-Some of them are a bit modified, others are modified a lot. Currently only a special portrait for Edwina is added, but I'm planning to include drow/vampire versions as well. Now, the controversies:
+The controversies:
 
 - Edwin, without the hood, with Red Wizards tattoos on his head instead.
 - Hmm, actually, I personally see no other controversies.
@@ -102,7 +100,7 @@ See the [BG2 mod NPC portrait gallery](docs/gallery_bg2_mods.md) for individual 
 
 ## Credits/thanks
 
-- **Wombat** - main inspiration to BG1ize all the portraits and the original author of most of the original BG2 cast portraits
+- **Wombat** - main inspiration to BG1ize all the portraits
 - **Vasculio** - base/ideas for BG1 portraits enhancements
 - **DosEquis** - base/ideas for BG1 portraits enhancements
 - **Isandir** - original PC portrait pack
