@@ -86,6 +86,17 @@ See the [Returning portrait gallery](docs/gallery_returning.md) for individual p
 
 This component replaces portraits for mod-added BG1 NPCs with enhanced BG1-style art.
 
+The original portrait authors are:
+- Glam's Portrait Pack - Glam or unknown
+- Brage, Brandock, Husam, Helga - Acifer
+- Tutorial Party, Drake, K'vel, Sirene - TheArtisan
+- Other Skitia NPC's - Skitia
+- Finch - unknown, possibly Bons
+- Gavin - K’aeloree
+- Isra - Lady Lesathoa
+- Ophysia - Llewren
+- Valerie - Hannah Wallace
+
 [![BG1 Mod Portraits](docs/party_bg1_mods_L_thumb.webp)](docs/party_bg1_mods_L.webp)
 
 See the [BG1 mod NPC portrait gallery](docs/gallery_bg1_mods.md) for individual portraits.
@@ -93,6 +104,26 @@ See the [BG1 mod NPC portrait gallery](docs/gallery_bg1_mods.md) for individual 
 ### Mods: BG2 NPC Portraits *(BG2:EE and EET)*
 
 This component replaces portraits for mod-added BG2 NPCs with enhanced BG1-style art.
+
+The original portrait authors are:
+- Adrian - MiLeah
+- Amber - Lorraine's portrait edit by Sirick
+- Angelo - wonnimchunha
+- Auren - Karsten Dahl
+- Brage, Brandock, Husam, Helga - Acifer
+- Deheriana - unknown
+- Ela - Serene Yoshiko
+- Fade - Lesatho
+- Ninde - wonnimchunha
+- Kelsey - Karse Soze
+- Keto - Bonnie Rutledge
+- Minyae - Oksana Che
+- Pai'Na, Sirene - TheArtisan
+- Saradas - unknown or Saradas
+- Solaufein - Chinasky
+- Other Skitia NPC's - Skitia
+- Gavin - K’aeloree
+- Isra - Lady Lesathoa
 
 [![BG2 Mod Portraits](docs/party_bg2_mods_L_thumb.webp)](docs/party_bg2_mods_L.webp)
 
@@ -103,8 +134,10 @@ See the [BG2 mod NPC portrait gallery](docs/gallery_bg2_mods.md) for individual 
 - **Wombat** - main inspiration to BG1ize all the portraits
 - **Vasculio** - base/ideas for BG1 portraits enhancements
 - **DosEquis** - base/ideas for BG1 portraits enhancements
+- **Kensei_xXx** - base/ideas for BG1 portraits enhancements
 - **Isandir** - original PC portrait pack
 - **Argent77** - exact code for the EE BG2 NPC portrait replacements
+- **all the original portrait authors**
 - **smeagolheart** - code for introducing Edwina portrait
 - **ALIEN, Argent77, Bubb, CamDawg, DavidW, GraionDilach, K4thos, jastey, Pecca and others** - without their effort there would be no sense in modding the 30 years old game.
 - **shaigan** - the mod author
