@@ -53,7 +53,6 @@ However, a few more controversial decisions were made:
 
 - Faldorn no longer looks like a vampiric Meryl Streep.
 - Imoen received a more extensive rework than the others, as I always felt her original portrait was rushed and somewhat disappointing.
-- Jaheira... well, this one may be the most controversial. As we know, there is no consistency between her appearance in BG1 and BG2 (and the BG2 version was, frankly, rather unfortunate), so there is no true canon look. For that reason I decided to use Wombat’s Jaheira face and keep it consistent with the upcoming BG2 portraits component.
 - Xan's face was dehumanized.
 
 [![BG 1 Portraits](docs/party_bg1_L_thumb.webp)](docs/party_bg1_L.webp)
