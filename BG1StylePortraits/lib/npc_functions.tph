@@ -41,7 +41,6 @@ BEGIN
   END
 END
 
-
 DEFINE_ACTION_FUNCTION UPDATE_EPILOG_PORTRAIT
 STR_VAR
   match_portrait = ~~ // original portrait BMP resref as regexp

@@ -14,13 +14,13 @@
 
 ## Overview
 
-This WeiDU mod aims to improve the quality and consistency of party portraits, especially in EET. The target for 1.0.0 is to cover BG1/SoD, BG2, mods, and PC Portraits. After that, it's possible to expand it for some main non-party NPCs.
+This WeiDU mod aims to improve the quality and consistency of party portraits, especially in EET. The target for 1.0.0 is to cover BG1/SoD, BG2/ToB, mods, and PC Portraits. After that, it's possible to expand it for some main non-party NPCs.
 
 The mod supports the vanilla EE UI, LeUI, and Infinity UI++.
 
 ## Installation order and mod compatibility
 
-This is a portrait mod and should be installed after content mods that install new NPCs or quests. I suggest to install it as the last mod to make it possible to easy reinstall it on new versions release.
+This is a portrait mod and should be installed after content mods that install new NPCs or quests. I suggest to install it as the last mod to make it possible to easy reinstall it on new versions release. When NPC portraits will be available, it should be installed after The HPS Portraits Project so it will overwrite some of them. 
 
 There are no compatibility issues known with other mods.
 
@@ -32,7 +32,7 @@ There are no compatibility issues known with other mods.
 
 Each portrait uses three size variants:
 
-- **M** - in-game (zoomed in)
+- **M** - in-game (resized L)
 - **L** - character record/inventory (base portrait)
 - **r** - additional portrait at the Infinity UI inventory screen (zoomed out)
 
@@ -54,6 +54,7 @@ However, a few more controversial decisions were made:
 - Faldorn no longer looks like a vampiric Meryl Streep.
 - Imoen received a more extensive rework than the others, as I always felt her original portrait was rushed and somewhat disappointing.
 - Xan's face was dehumanized.
+- Viconia's face got changed to be consistent through the saga 
 
 [![BG 1 Portraits](docs/party_bg1_L_thumb.webp)](docs/party_bg1_L.webp)
 
@@ -66,7 +67,7 @@ This component replaces portraits for recruitable BG2 NPCs with enhanced BG1-sty
 The controversies:
 
 - Edwin, without the hood, with Red Wizards tattoos on his head instead.
-- Hmm, actually, I personally see no other controversies.
+- Viconia's portrait is completely different, trying to match the previous portraits.
 
 [![BG 2 Portraits](docs/party_bg2_L_thumb.webp)](docs/party_bg2_L.webp)
 
@@ -75,7 +76,8 @@ See the [BG2 portrait gallery](docs/gallery_bg2.md) for individual portraits.
 ### Party NPC: Returning NPC Portraits *(BG2:EE and EET)*
 
 This component replaces portraits for modded returning BG1 NPCs in BG2 (special guest: ToB Yoshimo from Yoshimo's Remorse) with enhanced BG1-style art.
-It affects whatever NPC version you installed before: standalone mods, BG1 NPCs for SoA&ToB, Continous NPCs (although the last one has not been tested yet). 
+It affects whatever NPC version you installed before: standalone mods, BG1 NPCs for SoA&ToB, Continous NPCs (although the last one has not been tested yet).
+The design idea is to present them without any helmets/caps as other BG2 portraits (except Korgan).
 
 [![Returning Portraits](docs/party_returning_L_thumb.webp)](docs/party_returning_L.webp)
 
@@ -86,15 +88,16 @@ See the [Returning portrait gallery](docs/gallery_returning.md) for individual p
 This component replaces portraits for mod-added BG1 NPCs with enhanced BG1-style art.
 
 The original portrait authors are:
-- Glam's Portrait Pack - Glam or unknown
-- Brage, Brandock, Husam, Helga - Acifer
-- Tutorial Party, Drake, K'vel, Sirene - TheArtisan
-- Other Skitia NPC's - Skitia
-- Finch - unknown, possibly Bons
-- Gavin - K’aeloree
-- Isra - Lady Lesathoa
-- Ophysia - Llewren
-- Valerie - Hannah Wallace
+- Glam's Portrait Pack - __Glam or unknown__
+- Brage, Brandock, Husam, Helga, Kale, Grey - __Acifer__
+- Tutorial Party, Drake, K'vel, Sirene - __TheArtisan__
+- Emily, Recorder - __Nicole__ 
+- Vienxay - __Crisshasart__
+- Finch - __unknown, possibly Bons__
+- Gavin - __K’aeloree__
+- Isra - __Lady Lesathoa__
+- Ophysia - __Llewren__
+- Valerie - __Hannah Wallace__
 
 [![BG1 Mod Portraits](docs/party_bg1_mods_L_thumb.webp)](docs/party_bg1_mods_L.webp)
 
@@ -105,24 +108,26 @@ See the [BG1 mod NPC portrait gallery](docs/gallery_bg1_mods.md) for individual 
 This component replaces portraits for mod-added BG2 NPCs with enhanced BG1-style art.
 
 The original portrait authors are:
-- Adrian - MiLeah
-- Amber - Lorraine's portrait edit by Sirick
-- Angelo - wonnimchunha
-- Auren - Karsten Dahl
-- Brage, Brandock, Husam, Helga - Acifer
-- Deheriana - unknown
-- Ela - Serene Yoshiko
-- Fade - Lesatho
-- Ninde - wonnimchunha
-- Kelsey - Karse Soze
-- Keto - Bonnie Rutledge
-- Minyae - Oksana Che
-- Pai'Na, Sirene - TheArtisan
-- Saradas - unknown or Saradas
-- Solaufein - Chinasky
-- Other Skitia NPC's - Skitia
-- Gavin - K’aeloree
-- Isra - Lady Lesathoa
+- Adrian - **MiLeah**
+- Amber - **Lorraine's portrait edit by Sirick**
+- Angelo - **wonnimchunha**
+- Auren - **Karsten Dahl**
+- Brage, Brandock, Husam, Helga, Kale, Grey - __Acifer__
+- Emily, Recorder - __Nicole__
+- Vienxay - __Crisshasart__
+- Deheriana - **unknown**
+- Ela - **Serene Yoshiko**
+- Fade - **Lesatho**
+- Ninde - **wonnimchunha**
+- Kelsey - **Karse Soze**
+- Keto - **Bonnie Rutledge**
+- Minyae - **Oksana Che**
+- Pai'Na, Sirene - **TheArtisan**
+- Saradas - **unknown or Saradas**
+- Solaufein - **Chinasky**
+- Other Skitia NPC's - **Skitia**
+- Gavin - **K’aeloree**
+- Isra - **Lady Lesathoa**
 
 [![BG2 Mod Portraits](docs/party_bg2_mods_L_thumb.webp)](docs/party_bg2_mods_L.webp)
 
@@ -133,11 +138,11 @@ See the [BG2 mod NPC portrait gallery](docs/gallery_bg2_mods.md) for individual 
 - **Wombat** - main inspiration to BG1ize all the portraits
 - **Vasculio** - base/ideas for BG1 portraits enhancements
 - **DosEquis** - base/ideas for BG1 portraits enhancements
-- **Kensei_xXx** - base/ideas for BG1 portraits enhancements
+- **Kensei_xXx** - base/ideas for BG1 and PC portraits enhancements
 - **Isandir** - original PC portrait pack
 - **Argent77** - exact code for the EE BG2 NPC portrait replacements
-- **all the original portrait authors**
+- **all the original portrait authors mentioned before**
 - **smeagolheart** - code for introducing Edwina portrait
-- **ALIEN, Argent77, Bubb, CamDawg, DavidW, GraionDilach, K4thos, jastey, Pecca and others** - without their effort there would be no sense in modding the 30 years old game.
+- **ALIEN, Argent77, Bubb, CamDawg, DavidW, GraionDilach, K4thos, jastey, Pecca, Acifer and others** - without their effort there would be no sense in modding the 30 years old game.
 - **shaigan** - the mod author
 

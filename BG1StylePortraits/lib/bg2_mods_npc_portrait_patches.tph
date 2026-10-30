@@ -8,13 +8,13 @@ STR_VAR
   cre_file_2 = ~B!GAV13.cre~
 END
 
-LAF CHANGE_NPC_PORTRAIT
-STR_VAR
-  portrait = ~SNVERRS~
-  source_dir = ~party_bg2_mods~
-  cre_file_1 = ~L#2VERR.cre~
-  cre_file_2 = ~L#2VE25.cre~
-END
+//LAF CHANGE_NPC_PORTRAIT
+//STR_VAR
+//  portrait = ~SNVERRS~
+//  source_dir = ~party_bg2_mods~
+//  cre_file_1 = ~L#2VERR.cre~
+//  cre_file_2 = ~L#2VE25.cre~
+//END
 
 LAF CHANGE_NPC_PORTRAIT
 STR_VAR
@@ -61,13 +61,13 @@ STR_VAR
   cre_file_5 = ~p#dehwma.cre~
 END
 
-LAF CHANGE_NPC_PORTRAIT
-STR_VAR
-  portrait = ~SNDVARA~
-  source_dir = ~party_bg2_mods~
-  cre_file_1 = ~L#DVA.cre~
-  cre_file_2 = ~L#DVA25.cre~
-END
+//LAF CHANGE_NPC_PORTRAIT
+//STR_VAR
+//  portrait = ~SNDVARA~
+//  source_dir = ~party_bg2_mods~
+//  cre_file_1 = ~L#DVA.cre~
+//  cre_file_2 = ~L#DVA25.cre~
+//END
 
 LAF CHANGE_NPC_PORTRAIT
 STR_VAR
@@ -133,29 +133,29 @@ STR_VAR
   cre_file_3 = ~e3fade25.cre~
 END
 
-LAF CHANGE_NPC_PORTRAIT
-STR_VAR
-  portrait = ~SNGAHES~
-  source_dir = ~party_bg2_mods~
-  cre_file_1 = ~G1GAHE.cre~
-  cre_file_2 = ~G1GAHE25.cre~
-END
+//LAF CHANGE_NPC_PORTRAIT
+//STR_VAR
+//  portrait = ~SNGAHES~
+//  source_dir = ~party_bg2_mods~
+//  cre_file_1 = ~G1GAHE.cre~
+//  cre_file_2 = ~G1GAHE25.cre~
+//END
 
-LAF CHANGE_NPC_PORTRAIT
-STR_VAR
-  portrait = ~SNFYALV~
-  source_dir = ~party_bg2_mods~
-  cre_file_1 = ~L#FYA.cre~
-  cre_file_2 = ~L#FYA25.cre~
-END
+//LAF CHANGE_NPC_PORTRAIT
+//STR_VAR
+//  portrait = ~SNFYALV~
+//  source_dir = ~party_bg2_mods~
+//  cre_file_1 = ~L#FYA.cre~
+//  cre_file_2 = ~L#FYA25.cre~
+//END
 
-LAF CHANGE_NPC_PORTRAIT
-STR_VAR
-  portrait = ~SNFHAUG~
-  source_dir = ~party_bg2_mods~
-  cre_file_1 = ~L#FHA.cre~
-  cre_file_2 = ~L#FHA25.cre~
-END
+//LAF CHANGE_NPC_PORTRAIT
+//STR_VAR
+//  portrait = ~SNFHAUG~
+//  source_dir = ~party_bg2_mods~
+//  cre_file_1 = ~L#FHA.cre~
+//  cre_file_2 = ~L#FHA25.cre~
+//END
 
 LAF CHANGE_NPC_PORTRAIT
 STR_VAR

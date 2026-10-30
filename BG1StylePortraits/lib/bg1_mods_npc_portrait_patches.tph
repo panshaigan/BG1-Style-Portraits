@@ -220,10 +220,10 @@ STR_VAR
   cre_file_1 = ~t2val.cre~
 END
 
-LAF CHANGE_NPC_PORTRAIT
-STR_VAR
-  portrait = ~SVERRSZ~
-  source_dir = ~party_bg1_mods~
-  cre_file_1 = ~L#1VERR.cre~
-  cre_file_2 = ~L#1VERR1.cre~
-END
+//LAF CHANGE_NPC_PORTRAIT
+//STR_VAR
+//  portrait = ~SVERRSZ~
+//  source_dir = ~party_bg1_mods~
+//  cre_file_1 = ~L#1VERR.cre~
+//  cre_file_2 = ~L#1VERR1.cre~
+//END
