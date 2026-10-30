@@ -125,7 +125,6 @@ The original portrait authors are:
 - Pai'Na, Sirene - **TheArtisan**
 - Saradas - **unknown or Saradas**
 - Solaufein - **Chinasky**
-- Other Skitia NPC's - **Skitia**
 - Gavin - **K’aeloree**
 - Isra - **Lady Lesathoa**
 
