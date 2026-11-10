@@ -37,5 +37,9 @@ Click a thumbnail to view the full-size portrait.
 | [![Recorder - L](portraits/party_bg1_mods/thumbs/SRECORDL.webp)](portraits/party_bg1_mods/SRECORDL.webp) | [![Recorder - r](portraits/party_bg1_mods/thumbs/srecordr.webp)](portraits/party_bg1_mods/srecordr.webp) | [![Sirene - L](portraits/party_bg1_mods/thumbs/SSIRENL.webp)](portraits/party_bg1_mods/SSIRENL.webp) | [![Sirene - r](portraits/party_bg1_mods/thumbs/ssirenr.webp)](portraits/party_bg1_mods/ssirenr.webp) |
 | **Valerie** |  | **Vienxay** |  |
 | [![Valerie - L](portraits/party_bg1_mods/thumbs/SVALERIL.webp)](portraits/party_bg1_mods/SVALERIL.webp) | [![Valerie - r](portraits/party_bg1_mods/thumbs/svalerir.webp)](portraits/party_bg1_mods/svalerir.webp) | [![Vienxay - L](portraits/party_bg1_mods/thumbs/SVIENXAL.webp)](portraits/party_bg1_mods/SVIENXAL.webp) | [![Vienxay - r](portraits/party_bg1_mods/thumbs/svienxar.webp)](portraits/party_bg1_mods/svienxar.webp) |
-| **Vynd** |  |  |  |
-| [![Vynd - L](portraits/party_bg1_mods/thumbs/SVYNDL.webp)](portraits/party_bg1_mods/SVYNDL.webp) | [![Vynd - r](portraits/party_bg1_mods/thumbs/svyndr.webp)](portraits/party_bg1_mods/svyndr.webp) |  |  |
+| **Vynd** |  | **Verr'Sza** |  |
+| [![Vynd - L](portraits/party_bg1_mods/thumbs/SVYNDL.webp)](portraits/party_bg1_mods/SVYNDL.webp) | [![Vynd - r](portraits/party_bg1_mods/thumbs/svyndr.webp)](portraits/party_bg1_mods/svyndr.webp) | [![Verr'Sza - L](portraits/party_bg1_mods/thumbs/SVERRSZL.webp)](portraits/party_bg1_mods/SVERRSZL.webp) | [![Verr'Sza - r](portraits/party_bg1_mods/thumbs/sverrszr.webp)](portraits/party_bg1_mods/sverrszr.webp) |
+| **Grey** |  | |  |
+| [![Grey - L](portraits/party_bg1_mods/thumbs/SGREYL.webp)](portraits/party_bg1_mods/SGREYL.webp) | [![Grey - r](portraits/party_bg1_mods/thumbs/sgreyr.webp)](portraits/party_bg1_mods/sgreyr.webp) | | |
+
+SVERRSZ

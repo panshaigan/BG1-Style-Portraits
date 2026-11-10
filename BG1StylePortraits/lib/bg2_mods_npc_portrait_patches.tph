@@ -8,13 +8,13 @@ STR_VAR
   cre_file_2 = ~B!GAV13.cre~
 END
 
-//LAF CHANGE_NPC_PORTRAIT
-//STR_VAR
-//  portrait = ~SNVERRS~
-//  source_dir = ~party_bg2_mods~
-//  cre_file_1 = ~L#2VERR.cre~
-//  cre_file_2 = ~L#2VE25.cre~
-//END
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNVERRS~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~L#2VERR.cre~
+  cre_file_2 = ~L#2VE25.cre~
+END
 
 LAF CHANGE_NPC_PORTRAIT
 STR_VAR
@@ -133,13 +133,13 @@ STR_VAR
   cre_file_3 = ~e3fade25.cre~
 END
 
-//LAF CHANGE_NPC_PORTRAIT
-//STR_VAR
-//  portrait = ~SNGAHES~
-//  source_dir = ~party_bg2_mods~
-//  cre_file_1 = ~G1GAHE.cre~
-//  cre_file_2 = ~G1GAHE25.cre~
-//END
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNGAHES~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~G1GAHE.cre~
+  cre_file_2 = ~G1GAHE25.cre~
+END
 
 //LAF CHANGE_NPC_PORTRAIT
 //STR_VAR
@@ -249,9 +249,16 @@ END
 
 LAF CHANGE_NPC_PORTRAIT
 STR_VAR
-  portrait = ~SHUSAM~
-  source_dir = ~party_bg1_mods~
+  portrait = ~SNHUSAM~
+  source_dir = ~party_bg2_mods~
   cre_file_1 = ~C#HUSAM1.cre~
+END
+
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNGREY~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~c#grey02.cre~
 END
 
 ACTION_IF (GAME_IS ~eet~) BEGIN
@@ -276,7 +283,7 @@ ACTION_IF (GAME_IS ~eet~) BEGIN
   LAF UPDATE_EPILOG_PORTRAIT
   STR_VAR
     match_portrait = ~C#BRAND.*~
-    portrait = ~SNBREAGL~
+    portrait = ~SNBRANDL~
   END
 END
 
