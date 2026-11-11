@@ -10,14 +10,6 @@ END
 
 LAF CHANGE_NPC_PORTRAIT
 STR_VAR
-  portrait = ~SNVERRS~
-  source_dir = ~party_bg2_mods~
-  cre_file_1 = ~L#2VERR.cre~
-  cre_file_2 = ~L#2VE25.cre~
-END
-
-LAF CHANGE_NPC_PORTRAIT
-STR_VAR
   portrait = ~SNADRIA~
   source_dir = ~party_bg2_mods~
   cre_file_1 = ~rh#adr.cre~
@@ -60,14 +52,6 @@ STR_VAR
   cre_file_4 = ~p#dehenc.cre~
   cre_file_5 = ~p#dehwma.cre~
 END
-
-//LAF CHANGE_NPC_PORTRAIT
-//STR_VAR
-//  portrait = ~SNDVARA~
-//  source_dir = ~party_bg2_mods~
-//  cre_file_1 = ~L#DVA.cre~
-//  cre_file_2 = ~L#DVA25.cre~
-//END
 
 LAF CHANGE_NPC_PORTRAIT
 STR_VAR
@@ -141,21 +125,13 @@ STR_VAR
   cre_file_2 = ~G1GAHE25.cre~
 END
 
-//LAF CHANGE_NPC_PORTRAIT
-//STR_VAR
-//  portrait = ~SNFYALV~
-//  source_dir = ~party_bg2_mods~
-//  cre_file_1 = ~L#FYA.cre~
-//  cre_file_2 = ~L#FYA25.cre~
-//END
-
-//LAF CHANGE_NPC_PORTRAIT
-//STR_VAR
-//  portrait = ~SNFHAUG~
-//  source_dir = ~party_bg2_mods~
-//  cre_file_1 = ~L#FHA.cre~
-//  cre_file_2 = ~L#FHA25.cre~
-//END
+LAF CHANGE_NPC_PORTRAIT
+STR_VAR
+  portrait = ~SNFHAUG~
+  source_dir = ~party_bg2_mods~
+  cre_file_1 = ~L#FHA.cre~
+  cre_file_2 = ~L#FHA25.cre~
+END
 
 LAF CHANGE_NPC_PORTRAIT
 STR_VAR
@@ -288,18 +264,17 @@ ACTION_IF (GAME_IS ~eet~) BEGIN
 END
 
 ACTION_IF (GAME_IS ~bg2ee~) BEGIN
+  LAF CHANGE_NPC_PORTRAIT
+  STR_VAR
+    portrait = ~SBRANDO~
+    source_dir = ~party_bg1_mods~
+    cre_file_1 = ~c#bran01.cre~
+  END
+
   ACTION_IF (NOT GAME_IS ~eet~) BEGIN
-    COPY ~%MOD_FOLDER%/portraits/party_bg2/SNBRAGEL.bmp~ ~override/SNBRAGEL.bmp~
-    COPY ~%MOD_FOLDER%/portraits/party_bg2/SNBRAGEM.bmp~ ~override/SNBRAGEM.bmp~
-    COPY ~%MOD_FOLDER%/portraits/party_bg2/snbrager.bmp~ ~override/snbrager.bmp~
-
-    COPY ~%MOD_FOLDER%/portraits/party_bg2/SNBREAGL.bmp~ ~override/SNBREAGL.bmp~
-    COPY ~%MOD_FOLDER%/portraits/party_bg2/SNBREAGM.bmp~ ~override/SNBREAGM.bmp~
-    COPY ~%MOD_FOLDER%/portraits/party_bg2/snbreagr.bmp~ ~override/snbreagr.bmp~
-
-    COPY ~%MOD_FOLDER%/portraits/party_bg2/SNBREAGL.bmp~ ~override/NEERAL.bmp~
-    COPY ~%MOD_FOLDER%/portraits/party_bg2/SNBREAGM.bmp~ ~override/NEERAM.bmp~
-    COPY ~%MOD_FOLDER%/portraits/party_bg2/snbreagr.bmp~ ~override/neerar.bmp~
+    COPY ~%MOD_FOLDER%/portraits/party_bg2/SNBRANDL.bmp~ ~override/SBRANDOL.bmp~
+    COPY ~%MOD_FOLDER%/portraits/party_bg2/SNBRANDM.bmp~ ~override/SBRANDOM.bmp~
+    COPY ~%MOD_FOLDER%/portraits/party_bg2/snbrandr.bmp~ ~override/sbrandor.bmp~
   END
 END
 
