@@ -36,9 +36,14 @@ Each portrait uses three size variants:
 - **L** - character record/inventory (base portrait)
 - **r** - additional portrait at the Infinity UI inventory screen (zoomed out)
 
-### Player Character: Add Extended Isandir's Portrait Pack *(BG:EE, BG2:EE, and EET)*
+### Player Character: Replace the PC portraits and expand the collection *(BG:EE, BG2:EE, and EET)*
 
-This component adds well-known custom portraits selectable during character creation
+This component replaces existing PC portraits with upscaled BG1ized versions, adds new ones and removes the party NPC's portraits from the list. 
+The sources of the new portraits are: Isandir's portraits, NwN portraits, PoE portraits and other portraits posted on Beamdog forum as propositions for creating PC portraits.
+
+[![BG 2 Portraits](docs/female_L_thumb.webp)](docs/female_L.webp)
+[![BG 2 Portraits](docs/male_L_thumb.webp)](docs/male_L.webp)
+
 
 ### Player Character: Make NPC portraits unavailable for PC selection *(BG:EE, BG2:EE, and EET)*
 
