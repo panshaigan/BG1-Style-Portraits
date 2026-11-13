@@ -1,10 +1,11 @@
 //Setup
 @1 = ~Game not supported~
 @2 = ~UI not supported~
+@3 = ~Could not find a supported PC portrait table in the UI.~
+@4 = ~Could not find the supported Infinity UI++ portrait picker functions. The PC portraits component cannot be installed safely with this UI version.~
 
 @1000 = ~PC Portraits~
-@1001 = ~Isandir's Portrait Pack~
-@1901 = ~Make NPC portraits unavailable for PC selection~
+@1001 = ~Replace PC Portraits~
 
 @2000 = ~Party NPC Portraits~
 @2001 = ~Enhanced BG1 NPC Portraits~

@@ -1,0 +1,46 @@
+ACTION_IF (infinityui = 1) BEGIN
+  OUTER_TEXT_SPRINT pc_portrait_list ~UI.MENU~
+END
+ELSE BEGIN
+  OUTER_TEXT_SPRINT pc_portrait_list ~BGEE.LUA~
+END
+
+// Match a complete portrait table, including its nested {name, gender} rows.
+// Infinity UI++ assigns the table again when the start menu opens, so replace
+// every assignment rather than relying on the original portraits as anchors.
+OUTER_TEXT_SPRINT pc_portrait_table ~\bportraits[ %TAB%%LNL%%WNL%]*=[ %TAB%%LNL%%WNL%]*{[^{}]*\({[^{}]*}[^{}]*\)*}~
+
+COPY_EXISTING ~%pc_portrait_list%~ ~override~
+  PATCH_IF (INDEX_BUFFER (~%pc_portrait_table%~) < 0) BEGIN
+    PATCH_FAIL @3
+  END
+  REPLACE_TEXTUALLY ~%pc_portrait_table%~ ~portraits = {
+    // BG1StylePortraits PC portrait entries
+}~
+BUT_ONLY
+
+OUTER_TEXT_SPRINT pc_portrait_entries ~~
+ACTION_FOR_EACH pc_portrait_dir IN ~male~ ~female~ BEGIN
+  OUTER_SET pc_portrait_gender = 1
+  ACTION_IF (~%pc_portrait_dir%~ STRING_EQUAL ~female~) BEGIN
+    OUTER_SET pc_portrait_gender = 2
+  END
+
+  // Copy all L/M/r variants unchanged. Only L files define picker entries;
+  // the UI appends the size suffix to the seven-character portrait base.
+  COPY ~%MOD_FOLDER%/portraits/%pc_portrait_dir%~ ~override~
+  ACTION_BASH_FOR ~%MOD_FOLDER%/portraits/%pc_portrait_dir%~ ~^.+[Ll]\.[Bb][Mm][Pp]$~ BEGIN
+    OUTER_PATCH_SAVE pc_portrait ~%BASH_FOR_RES%~ BEGIN
+      REPLACE_TEXTUALLY ~[Ll]$~ ~~
+    END
+    OUTER_TEXT_SPRINT pc_portrait_entries ~%pc_portrait_entries%        {'%pc_portrait%', %pc_portrait_gender%},%LNL%~
+  END
+END
+
+COPY_EXISTING ~%pc_portrait_list%~ ~override~
+  REPLACE_TEXTUALLY EXACT_MATCH ~// BG1StylePortraits PC portrait entries~ ~%pc_portrait_entries%~
+BUT_ONLY
+
+ACTION_IF (infinityui = 1) BEGIN
+  INCLUDE ~%MOD_FOLDER%/lib/infinity_ui_pc_portraits.tph~
+END

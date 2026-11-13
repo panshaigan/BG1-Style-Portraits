@@ -10,7 +10,7 @@ LANGUAGE ~English~
 //
 // --- PC Portraits ---
 //
-BEGIN @1001 // Isandir's Portrait Pack
+BEGIN @1001 // Replace PC Portraits
   REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) @1
   REQUIRE_PREDICATE (
     (RESOURCE_CONTAINS ~UI.MENU~ ~rgGetGameEnginePortraits~)
@@ -18,23 +18,12 @@ BEGIN @1001 // Isandir's Portrait Pack
   ) @2
   GROUP @1000 // PC Portraits
   DESIGNATED 1001
+  LABEL ~sha_BG1StylePortraits_PC_Portraits~
+  // Keep the published label as an alias for existing install orders.
   LABEL ~sha_BG1StylePortraits_Isandir~
 
   INCLUDE ~%MOD_FOLDER%/lib/detect_ui.tph~
-  INCLUDE ~%MOD_FOLDER%/lib/isandir.tph~
-
-BEGIN @1901 // Make the portraits already assigned to NPC (like Jaheira, Minsc) unavailable for the player to choose as <CHARNAME> portrait
-  REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) @1
-  REQUIRE_PREDICATE (
-    (RESOURCE_CONTAINS ~UI.MENU~ ~rgGetGameEnginePortraits~)
-    OR (RESOURCE_CONTAINS ~BGEE.LUA~ ~portraits~)
-  ) @2
-  GROUP @1000 // PC Portraits
-  DESIGNATED 1901
-  LABEL ~sha_BG1StylePortraits_Clear_PC_Portraits~
-
-  INCLUDE ~%MOD_FOLDER%/lib/detect_ui.tph~
-  INCLUDE ~%MOD_FOLDER%/lib/clear_pc_portraits.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/pc_portraits.tph~
 
 //
 // --- NPC Portraits ---

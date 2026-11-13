@@ -1,0 +1,76 @@
+// Infinity UI++ uses MAN1L/WOMAN1L both as gender identifiers and as cycle
+// sentinels. Neither portrait exists after replacing the collection.
+OUTER_TEXT_SPRINT pc_creation_function ~function[ %TAB%]+rgGetPortraitList[ %TAB%]*(gender)[^`]*function[ %TAB%]+rgGetCustomizedPortraitList[ %TAB%]*()~
+OUTER_TEXT_SPRINT pc_customization_function ~function[ %TAB%]+rgGetCustomizedPortraitList[ %TAB%]*()[^`]*function[ %TAB%]+rgGetSelectedPortrait[ %TAB%]*(~
+OUTER_TEXT_SPRINT pc_male_call ~rgGetPortraitList([ %TAB%]*['"]MAN1L['"][ %TAB%]*)~
+OUTER_TEXT_SPRINT pc_female_call ~rgGetPortraitList([ %TAB%]*['"]WOMAN1L['"][ %TAB%]*)~
+
+COPY_EXISTING ~UI.MENU~ ~override~
+  PATCH_IF ((INDEX_BUFFER (~%pc_creation_function%~) < 0)
+    OR (INDEX_BUFFER (~%pc_customization_function%~) < 0)
+    OR (INDEX_BUFFER (~%pc_male_call%~) < 0)
+    OR (INDEX_BUFFER (~%pc_female_call%~) < 0)) BEGIN
+    PATCH_FAIL @4
+  END
+
+  REPLACE_TEXTUALLY ~%pc_male_call%~ ~rgGetPortraitList(1)~
+  REPLACE_TEXTUALLY ~%pc_female_call%~ ~rgGetPortraitList(2)~
+
+  REPLACE_TEXTUALLY ~%pc_creation_function%~ ~function shaCollectPCPortraits(target, gender)
+    local genderByPortrait = {}
+    for _, entry in ipairs(portraits) do
+        genderByPortrait[string.upper(entry[1] .. 'L')] = entry[2]
+    end
+
+    local first = createCharScreen:GetCurrentPortrait()
+    if not (type(first) == 'string') or first == '' then
+        print('BG1StylePortraits: no current portrait to enumerate.')
+        return
+    end
+    first = string.upper(first)
+    -- Customization already has the engine's current gender-specific cycle.
+    -- Use its starting portrait's registered gender when it is known; portraits
+    -- supplied by the engine outside our table can still be selected.
+    gender = gender or genderByPortrait[first]
+    local seen = {}
+    while true do
+        local port = createCharScreen:GetCurrentPortrait()
+        if not (type(port) == 'string') or port == '' then
+            print('BG1StylePortraits: portrait enumeration returned an empty portrait.')
+            return
+        end
+        local key = string.upper(port)
+        if seen[key] then
+            if not (key == first) then
+                print('BG1StylePortraits: portrait enumeration repeated ' .. port .. ' before returning to its start.')
+            end
+            return
+        end
+        seen[key] = true
+        local portraitGender = genderByPortrait[key]
+        local prefix = string.lower(string.sub(port, 1, 2))
+        if (not gender or not portraitGender or portraitGender == gender)
+            and not (gender == 1 and prefix == 'f#')
+            and not (gender == 2 and prefix == 'm#') then
+            table.insert(target, port)
+        end
+        createCharScreen:IncCurrentPortrait()
+    end
+end
+
+function rgGetPortraitList(gender)
+    if gender == 1 then
+        shaCollectPCPortraits(rgMalePortraitList, gender)
+    elseif gender == 2 then
+        shaCollectPCPortraits(rgFemalePortraitList, gender)
+    end
+end
+
+function rgGetCustomizedPortraitList()~
+
+  REPLACE_TEXTUALLY ~%pc_customization_function%~ ~function rgGetCustomizedPortraitList()
+    shaCollectPCPortraits(rgCustomizedPortraitList)
+end
+
+function rgGetSelectedPortrait(~
+BUT_ONLY

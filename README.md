@@ -36,18 +36,17 @@ Each portrait uses three size variants:
 - **L** - character record/inventory (base portrait)
 - **r** - additional portrait at the Infinity UI inventory screen (zoomed out)
 
-### Player Character: Replace the PC portraits and expand the collection *(BG:EE, BG2:EE, and EET)*
+### Player Character: Replace PC Portraits *(BG:EE, BG2:EE, and EET)*
 
-This component replaces existing PC portraits with upscaled BG1ized versions, adds new ones and removes the party NPC's portraits from the list. 
+This single component clears all existing entries from the player portrait list, including NPC portraits, and fills it with the portraits from `portraits/female` and `portraits/male`. It copies each portrait's L/M/r variants and registers each portrait once, with the appropriate gender.
+For Infinity UI++, it also updates the character creation and customization pickers to enumerate a complete portrait cycle without depending on the removed vanilla portraits.
 The sources of the new portraits are: Isandir's portraits, NwN portraits, PoE portraits and other portraits posted on Beamdog forum as propositions for creating PC portraits.
+
+When upgrading from a version with separate portrait-pack and NPC-removal components, uninstall both old PC components before replacing the mod files. The combined component keeps number 1001; component 1901 has been retired.
 
 [![BG 2 Portraits](docs/female_L_thumb.webp)](docs/female_L.webp)
 [![BG 2 Portraits](docs/male_L_thumb.webp)](docs/male_L.webp)
 
-
-### Player Character: Make NPC portraits unavailable for PC selection *(BG:EE, BG2:EE, and EET)*
-
-This component removes portraits already assigned to NPCs from the `<CHARNAME>` portrait list, so party members keep their unique portraits.
 
 ### Party NPC: Enhanced BG1 NPC Portraits *(BG:EE, BG2:EE, and EET)*
 

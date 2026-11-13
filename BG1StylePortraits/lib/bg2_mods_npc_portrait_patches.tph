@@ -55,14 +55,6 @@ END
 
 LAF CHANGE_NPC_PORTRAIT
 STR_VAR
-  portrait = ~SNEDDAR~
-  source_dir = ~party_bg2_mods~
-  cre_file_1 = ~L#2EDDRD.cre~
-  cre_file_2 = ~L#2ED25.cre~
-END
-
-LAF CHANGE_NPC_PORTRAIT
-STR_VAR
   portrait = ~SNELA~
   source_dir = ~party_bg2_mods~
   cre_file_1 = ~QI#Ela..cre~
