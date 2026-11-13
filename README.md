@@ -14,13 +14,13 @@
 
 ## Overview
 
-This WeiDU mod aims to improve the quality and consistency of party portraits, especially in EET. The target for 1.0.0 is to cover BG1/SoD, BG2/ToB, mods, and PC Portraits. After that, it's possible to expand it for some main non-party NPCs.
+This WeiDU mod aims to improve the quality and consistency of PC and NPC portraits, especially in EET. The target for 1.0.0 is to cover all vanilla party NPCs, big number of modded party NPCs, and upgrade/expand the PC portrait collection. After that, I will focus on adding the major non-party NPC portraits.
 
-The mod supports the vanilla EE UI, LeUI, and Infinity UI++.
+The mod supports the vanilla EE UI, LeUI, and Infinity UI++, however it's best suited for the latter.
 
 ## Installation order and mod compatibility
 
-This is a portrait mod and should be installed after content mods that install new NPCs or quests. I suggest to install it as the last mod to make it possible to easy reinstall it on new versions release. When NPC portraits will be available, it should be installed after The HPS Portraits Project so it will overwrite some of them. 
+This is a portrait mod and should be installed after content mods that install new NPCs or quests. I suggest to install it as the last mod to make it possible to easy reinstall it on new versions release. It should be installed after The HPS Portraits Project so it will overwrite some of the portraits. 
 
 There are no compatibility issues known with other mods.
 
@@ -32,20 +32,19 @@ There are no compatibility issues known with other mods.
 
 Each portrait uses three size variants:
 
-- **M** - in-game (resized L)
+- **M** - in-game (downscaled L)
 - **L** - character record/inventory (base portrait)
 - **r** - additional portrait at the Infinity UI inventory screen (zoomed out)
 
 ### Player Character: Replace PC Portraits *(BG:EE, BG2:EE, and EET)*
 
-This single component clears all existing entries from the player portrait list, including NPC portraits, and fills it with the portraits from `portraits/female` and `portraits/male`. It copies each portrait's L/M/r variants and registers each portrait once, with the appropriate gender.
-For Infinity UI++, it also updates the character creation and customization pickers to enumerate a complete portrait cycle without depending on the removed vanilla portraits.
-The sources of the new portraits are: Isandir's portraits, NwN portraits, PoE portraits and other portraits posted on Beamdog forum as propositions for creating PC portraits.
+This single component clears all existing entries from the player portrait list and add new collection. 
+The sources of the new portraits are: Isandir's portraits, NwN portraits, PoE portraits and other portraits posted on Beamdog forum as propositions for creating PC portraits. If you spot any copyrighted one, please let me know.
 
-When upgrading from a version with separate portrait-pack and NPC-removal components, uninstall both old PC components before replacing the mod files. The combined component keeps number 1001; component 1901 has been retired.
+When upgrading from an older version with separate portrait-pack and NPC-removal components, uninstall both old PC components before replacing the mod files. The combined component keeps number 1001; component 1901 has been retired.
 
-[![BG 2 Portraits](docs/female_L_thumb.webp)](docs/female_L.webp)
-[![BG 2 Portraits](docs/male_L_thumb.webp)](docs/male_L.webp)
+[![Female PC portraits](docs/female_L_thumb.webp)](docs/female_L.webp)
+[![Male PC portraits](docs/male_L_thumb.webp)](docs/male_L.webp)
 
 
 ### Party NPC: Enhanced BG1 NPC Portraits *(BG:EE, BG2:EE, and EET)*

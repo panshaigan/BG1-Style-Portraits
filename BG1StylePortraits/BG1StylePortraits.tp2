@@ -16,11 +16,8 @@ BEGIN @1001 // Replace PC Portraits
     (RESOURCE_CONTAINS ~UI.MENU~ ~rgGetGameEnginePortraits~)
     OR (RESOURCE_CONTAINS ~BGEE.LUA~ ~portraits~)
   ) @2
-  GROUP @1000 // PC Portraits
   DESIGNATED 1001
   LABEL ~sha_BG1StylePortraits_PC_Portraits~
-  // Keep the published label as an alias for existing install orders.
-  LABEL ~sha_BG1StylePortraits_Isandir~
 
   INCLUDE ~%MOD_FOLDER%/lib/detect_ui.tph~
   INCLUDE ~%MOD_FOLDER%/lib/pc_portraits.tph~
