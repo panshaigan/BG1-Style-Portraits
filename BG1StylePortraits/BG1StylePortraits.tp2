@@ -1,6 +1,6 @@
 BACKUP ~weidu_external/backup/BG1StylePortraits~
 AUTHOR ~shaigan~
-VERSION ~0.8.2~
+VERSION ~0.9.0~
 
 LANGUAGE ~English~
          ~english~
@@ -68,5 +68,4 @@ BEGIN @2401 // Mods: BG2 NPC Portraits
   DESIGNATED 2401
   LABEL ~sha_BG1StylePortraits_BG2Mods~
 
-  COPY ~%MOD_FOLDER%/portraits/party_bg2_mods_special~ ~override~
   INCLUDE ~%MOD_FOLDER%/lib/bg2_mods_npc_portrait_patches.tph~
